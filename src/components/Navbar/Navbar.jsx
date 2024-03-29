@@ -1,6 +1,7 @@
 import React from "react";
-import logo from "../../../assets/logo/Group.svg";
-import "../Navbar/navbar.css";
+// import logo from "../../../assets/logo/Group.svg";
+import logo from "../../assets/logo/Group.svg";
+import "./navbar.css";
 import Button from "@mui/material/Button";
 
 function Navbar() {
