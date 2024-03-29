@@ -9,6 +9,13 @@ import image5 from "./assets/markus-spiske-5/markus-spiske-1LLh8k2_YFk-unsplash.
 import image7 from "./assets/markus-spiske-7/markus-spiske-1LLh8k2_YFk-unsplash.png";
 import image8 from "./assets/markus-spiske-8/markus-spiske-1LLh8k2_YFk-unsplash.png";
 import image9 from "./assets/markus-spiske-9/markus-spiske-1LLh8k2_YFk-unsplash.png";
+
+
+import { BrowserRouter as Router } from 'react-router-dom';
+import Register from "./components/register-login/Register";
+import Login from "./components/register-login/Login ";
+import Searchnav from "./components/searchnvabar/Searchnav";
+// import Login from "./components/register-login/Login ";
 const data = [
   {
     image: javaImg,
@@ -94,6 +101,9 @@ function App() {
           />
         ))}
       </div>
+      <Register heding="Start lerning" title="regester now"/>
+      <Login heding="Welcome back" title="Login" />
+    < Searchnav/>
     </>
   );
 }

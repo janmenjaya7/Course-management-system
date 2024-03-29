@@ -1,7 +1,7 @@
 import React from "react";
 import "../card/card.css";
 import logo from "../../assets/Group-icon/Group 63691.png";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
+// import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import Chip from "@mui/material/Chip";
 function card({ name, day, Assignments, time, image, chip }) {
   return (
@@ -28,7 +28,7 @@ function card({ name, day, Assignments, time, image, chip }) {
               </div>
               <div>
                 <span className="logo-section" id="logo">
-                  <AccessTimeIcon fontSize="small" />
+                  {/* <AccessTimeIcon fontSize="small" /> */}
                   {time} days
                 </span>
               </div>
