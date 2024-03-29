@@ -1,9 +1,9 @@
-import React from 'react'
-import '../card/card.css'
-import logo from '../../assets/Group-icon/Group 63691.png'
-import AccessTimeIcon from '@mui/icons-material/AccessTime'
-import Chip from '@mui/material/Chip'
-function card({ name, day, Assignments, time, image, chip }) {
+import React from "react";
+import "../card/card.css";
+import logo from "../../assets/Group-icon/Group 63691.png";
+import clock from "../../assets/logo/clock.svg";
+import Chip from "@mui/material/Chip";
+function card({ name, day, Assignments, time, image, chip, heding }) {
   return (
     <>
       <div className="card">
@@ -14,9 +14,7 @@ function card({ name, day, Assignments, time, image, chip }) {
           </div>
         </div>
         <div className="java-programming-text">
-          <h3 className="java-programming">
-            Learn java programming : for absolute beginners
-          </h3>
+          <h3 className="java-programming">{heding}</h3>
           <div className="name-sec">
             <p>by {name}</p>
             <div className="Assignments-sec">
@@ -28,7 +26,7 @@ function card({ name, day, Assignments, time, image, chip }) {
               </div>
               <div>
                 <span className="logo-section" id="logo">
-                  {/* <AccessTimeIcon /> */}
+                  <img src={clock} alt="clock" />
                   {time} days
                 </span>
               </div>

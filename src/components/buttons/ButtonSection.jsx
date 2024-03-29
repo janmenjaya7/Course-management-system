@@ -1,11 +1,26 @@
-import React from 'react'
+import React from 'react';
 import Button from '@mui/material/Button';
-function ButtonSection(props) {
+import './ButtonSection.css';
+
+const ButtonSection = ({ id, variant, onClick, buttonText }) => {
+  let buttonClass = 'custom-button';// DEFAULT CLASS FOR ALL VARIANTS.
+
+  // CLASS BASED ON VARIANTS.
+  if (variant === 'outlined') {
+    buttonClass += ' outlined';
+  } else if (variant === 'text') {
+    buttonClass += ' text';
+  }
+  else if(variant==="contained"){
+    buttonClass += 'contained'
+
+  }
+
   return (
-    <div>
- <Button variant={props.variant}>Text</Button>
-    </div>
-  )
-}
+    <Button id={id} variant={variant} onClick={onClick} className={buttonClass}>
+      {buttonText}
+    </Button>
+  );
+};
 
 export default ButtonSection;
