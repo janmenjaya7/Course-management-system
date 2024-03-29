@@ -1,0 +1,29 @@
+.navbar-sec {
+  background: #ffffff;
+  box-shadow: 0px 2px 10px #0000000d;
+  position: fixed;
+  width: 100%;
+  list-style: none;
+  z-index: 10;
+  top: 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-around;
+}
+.liest-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.liest-section li {
+  padding: 10px;
+  font-size: large;
+}
+.btn-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
