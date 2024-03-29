@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import Button from '@mui/material/Button';
 import './ButtonSection.css';
@@ -22,5 +23,18 @@ const ButtonSection = ({ id, variant, onClick, buttonText }) => {
     </Button>
   );
 };
+=======
+import React from "react";
+import Button from "@mui/material/Button";
+function ButtonSection({ variant, handleClick, btnTitle }) {
+  return (
+    <div>
+      <Button variant={variant} onClick={handleClick}>
+        {btnTitle}
+      </Button>
+    </div>
+  );
+}
+>>>>>>> 9652158f408d67e2887cdf06e8c033263ac35d42
 
 export default ButtonSection;

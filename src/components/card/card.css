@@ -52,3 +52,12 @@
   left: 15%;
   transform: translate(-50%, -50%);
 }
+.app-section {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 45px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
