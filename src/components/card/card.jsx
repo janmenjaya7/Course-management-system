@@ -38,7 +38,7 @@ function card({ name, day, Assignments, time, image, chip, heding }) {
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default card;
+export default card
