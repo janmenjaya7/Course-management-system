@@ -1,12 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import AccordionSection from './components/Accordions/AccordionSection'
 
 function App() {
   return (
-    <div >
-<h1>CourseManagement</h1>
+    <div>
+      <h1>CourseManagement</h1>
+      <AccordionSection />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
