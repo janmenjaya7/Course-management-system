@@ -3,12 +3,14 @@ import "../card/card.css";
 import logo from "../../assets/Group-icon/Group 63691.png";
 import clock from "../../assets/logo/clock.svg";
 import Chip from "@mui/material/Chip";
-import Searchnav from "../searchnvabar/Searchnav";
+import Navbar from "../Navbar/Navbar";
 
 function card({ name, day, Assignments, time, image, chip, heding }) {
   return (
     <>
-   
+
+      <Navbar />
+    
       <div className="card">
         <div className="img-sec">
           <img src={image} alt="imgSpaiske" />

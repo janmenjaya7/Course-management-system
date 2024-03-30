@@ -30,7 +30,7 @@ const Searchnav = () => {
                 Something else here
               </a>
             </li>
-            {/* <li><hr class="dropdown-divider"></li> */}
+    
             <li>
               <a class="dropdown-item" href="#">
                 Separated link
