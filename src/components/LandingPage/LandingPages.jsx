@@ -2,7 +2,7 @@ import React from "react";
 import "../LandingPage/landingPages.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../../assets/logo/Group.svg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 function LandingPages() {
   return (
     <>
@@ -19,7 +19,7 @@ function LandingPages() {
           </div>
           <div className="btn-landing ">
             <button className="btn-guest">
-              {/* <Link to="/guest">uest/ Not registered User</Link> */}
+              <Link to="/card">uest/ Not registered User</Link>
             </button>
             <button className="btn-student">Student module</button>
             <button className="btn-instructor">Instructor Module</button>
