@@ -4,10 +4,17 @@ import logo from "../../assets/Group-icon/Group 63691.png";
 import clock from "../../assets/logo/clock.svg";
 import Chip from "@mui/material/Chip";
 import Navbar from "../Navbar/Navbar";
+
 function card({ name, day, Assignments, time, image, chip, heding }) {
   return (
     <>
+<<<<<<< HEAD
+
+      <Navbar />
+    
+=======
       {/* <Navbar /> */}
+>>>>>>> b305912146187f91561a116e53b8387a9034cf73
       <div className="card">
         <div className="img-sec">
           <img src={image} alt="imgSpaiske" />
