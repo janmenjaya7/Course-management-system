@@ -13,7 +13,7 @@ function App() {
       <LandingPages />
       <Register heading="Start learning" title="Register Now"  />
       <Login heading="Welcome back" title="Login" />
-      <Searchnav/>
+    
     </>
   );
 }

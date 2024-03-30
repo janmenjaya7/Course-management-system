@@ -52,7 +52,7 @@
     font: normal normal normal 14px/19px Open Sans;
     color: var(--unnamed-color-262626);
     text-align: center;
-    /* margin-top: 5px; */
+    margin-top: 10px;
   }
   
   .login-link {
