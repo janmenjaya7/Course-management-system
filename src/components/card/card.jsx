@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar";
 function card({ name, day, Assignments, time, image, chip, heding }) {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="card">
         <div className="img-sec">
           <img src={image} alt="imgSpaiske" />
@@ -40,7 +40,7 @@ function card({ name, day, Assignments, time, image, chip, heding }) {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default card
+export default card;
