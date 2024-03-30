@@ -21,6 +21,10 @@ function Routing() {
           element={<Register heading="Start learning" title="Register Now" />}
         />
         <Route
+          path="/login"
+          element={<Login heading="Welcome back" title="Login" />}
+        />
+        <Route
           path="/card/login"
           element={<Login heading="Welcome back" title="Login" />}
         />
