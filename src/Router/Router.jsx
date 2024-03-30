@@ -5,10 +5,14 @@ import CardSection from "../components/card/CardSection";
 import Error from "./Error";
 import Register from "../components/register-login/Register";
 import Login from "../components/register-login/Login ";
-
+import Navbar from "../components/Navbar/Navbar";
+import { useLocation } from "react-router-dom";
 function Routing() {
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <>
+      {location.pathname !== "/" ? <Navbar /> : null}
       <Routes>
         <Route path="/" element={<LandingPages />} />
         <Route path="/card" element={<CardSection />} />

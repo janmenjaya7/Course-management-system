@@ -2,7 +2,7 @@ import React from "react";
 import "../LandingPage/landingPages.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../../assets/logo/Group.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function LandingPages() {
   const navigate = useNavigate();
