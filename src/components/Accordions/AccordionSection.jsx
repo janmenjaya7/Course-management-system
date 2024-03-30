@@ -1,24 +1,28 @@
-import React from 'react'
+
+
+import React from 'react';
+import './AccordionSection.css';
 import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
   Typography,
-} from '@mui/material'
-// import AddIcon from '@mui/icons-material/Add'
+} from '@mui/material';
 
-function AccordionSection() {
+
+function AccordionSection({ id, onClick }) {
   return (
     <div>
-      <Accordion>
+      <Accordion id={id} className="custom-accordion">
         <AccordionSummary
-          expandIcon={<>Icon</>}
+          className="accordion-summary"
+          expandIcon={<span>Icon</span>}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <Typography>Accordion 1</Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails className="accordion-details">
           <Typography>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -27,7 +31,7 @@ function AccordionSection() {
         </AccordionDetails>
       </Accordion>
     </div>
-  )
+  );
 }
 
-export default AccordionSection
+export default AccordionSection;
