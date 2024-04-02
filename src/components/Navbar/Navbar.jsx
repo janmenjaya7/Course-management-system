@@ -1,75 +1,58 @@
-<<<<<<< HEAD
-import React from 'react'
-import logo from '../../assets/logo/Group.svg'
-import './navbar.css'
-import Button from '@mui/material/Button'
-
-// import ButtonSection from "../buttons/ButtonSection";
-=======
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import Button from "@mui/material/Button";
 import logo from "../../assets/logo/Group.svg";
 import "./navbar.css";
-import { useNavigate, useLocation } from "react-router-dom";
->>>>>>> b305912146187f91561a116e53b8387a9034cf73
+import { useNavigate, useLocation, Link } from "react-router-dom";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
 function Navbar() {
+  const [value, setValue] = useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   const navigate = useNavigate();
   const location = useLocation();
   return (
-<<<<<<< HEAD
-    <div className="navbar-sec">
-      <div className="nav-content">
-        <img src={logo} alt="somlog" />
-        <div className="liest-section">
-          <li>Courses</li>
-          <li>FAQs</li>
-        </div>
-        <div className="btn-section">
-          <div>Teach on e2eHiring</div>
-          {/* <ButtonSection>Login</ButtonSection> */}
-          <Button variant="outlined">Login</Button>
-          <Button variant="contained">Register Now</Button>
-
-=======
     <>
       <div className="navbar-sec">
-        <div className="nav-content">
+        <Link to="/">
           <img src={logo} alt="somlog" />
-          {location.pathname === "/card" ? (
-            <>
-              <div className="liest-section">
-                <li>Courses</li>
-                <li>FAQs</li>
-              </div>
-              <div className="btn-section">
-                <div>Teach on e2eHiring</div>
-                {/* <ButtonSection>Login</ButtonSection> */}
-                <Button variant="outlined" onClick={() => navigate("./login")}>
-                  Login
-                </Button>
-                <Button
-                  variant="contained"
-                  onClick={() => navigate("./register")}
-                >
-                  Register Now
-                </Button>
-              </div>
-            </>
-          ) : null}
->>>>>>> b305912146187f91561a116e53b8387a9034cf73
-        </div>
-       
+        </Link>
+        {location.pathname === "/card" ? (
+          <>
+            <div className="liest-section">
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="basic tabs example"
+              >
+                <Tab label="Courses" className="tab-mui" />
+                <Tab label="FAQs" />
+              </Tabs>
+              <li value={value} index={0}></li>
+              <li value={value} index={1}></li>
+            </div>
+            <div className="btn-section">
+              <div>Teach on e2eHiring</div>
+              <Button variant="outlined" onClick={() => navigate("./login")}>
+                Login
+              </Button>
+              <Button
+                variant="contained"
+                onClick={() => navigate("./register")}
+              >
+                Register Now
+              </Button>
+            </div>
+            {/* </div> */}
+          </>
+        ) : null}
       </div>
-<<<<<<< HEAD
-    
-    </div>
-  )
-=======
     </>
   );
->>>>>>> b305912146187f91561a116e53b8387a9034cf73
 }
 
 export default Navbar;

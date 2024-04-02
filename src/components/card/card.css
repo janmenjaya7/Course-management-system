@@ -2,24 +2,25 @@
   margin: 0;
   padding: 0;
 }
+* p {
+  margin: 0;
+}
 .card {
   width: 275px;
   height: 331px;
   background: #ffffff;
-  box-shadow: 0px 2px 12px #00000014;
+  box-shadow: 0px 2px 12px #00000032;
   border-radius: 4px;
-  
 }
 .Assignments-sec {
   display: flex;
   align-items: center;
   margin-top: 5px;
 }
-.logo-section {
+.logo-sections {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-top: 5px;
 }
 #logo {
@@ -30,14 +31,15 @@
 }
 .java-programming {
   color: #101c36;
-  font-size: 22px;
+  font-size: 20px;
   font-family: Open Sans;
   /* opacity: 1; */
 }
 .name-sec {
   color: #999999;
-  margin-top: 10px;
-  opacity: 1;
+  /* margin-top: 10px; */
+  display: flex;
+  align-items: center;
 }
 .submit-due {
   margin-top: 5px;
@@ -54,7 +56,7 @@
   transform: translate(-50%, -50%);
 }
 .app-section {
-  margin-top: 10px;
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   padding: 20px 45px;

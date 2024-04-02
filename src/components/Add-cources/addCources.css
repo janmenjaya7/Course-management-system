@@ -1,0 +1,55 @@
+#add-section {
+  padding: 0 100px;
+}
+.add-sec-heding {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-add {
+  width: 137px;
+  height: 40px;
+  background: #1d366f;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Open Sans;
+  outline: none;
+  border: none;
+}
+.add-input-sec {
+  gap: 30px;
+  display: flex;
+}
+.add-btn-sec {
+  display: flex;
+  flex-direction: column;
+  width: 141px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  padding: 7px;
+}
+.add-input {
+  width: 259px;
+  height: 44px;
+  background: #fcfcfc;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  outline: none;
+  padding: 0 10px;
+}
+.add-serch-icon {
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: translateY(-50%);
+}
+.add-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
