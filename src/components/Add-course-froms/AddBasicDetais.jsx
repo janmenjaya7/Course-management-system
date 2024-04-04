@@ -4,7 +4,6 @@ import imgss from "../../assets/file-uplode/file-icon.svg";
 import { Link } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import TopNavbar from "./TopNavbar";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -21,7 +20,7 @@ function AddBasicDetails() {
   //   console.log(add);
   return (
     <>
-      <TopNavbar />
+      {/* <TopNavbar /> */}
       <div className="add-corses-section">
         <div id="basic-details">
           <div className="input-sec">
@@ -73,7 +72,7 @@ function AddBasicDetails() {
               <textarea
                 type="text"
                 placeholder="Enter about course"
-                className="text-area"
+                className="text-areas"
               />
             </div>
           </div>

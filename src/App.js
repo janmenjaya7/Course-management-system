@@ -1,18 +1,17 @@
 import "./App.css";
-import AddSyllabus from "./components/Add-course-froms/AddSyllabus";
-import DescribeCourse from "./components/Add-course-froms/DescribeCourse";
-import TopNavbar from "./components/Add-course-froms/TopNavbar";
-// import AddCources from "./components/Add-cources/AddCources";
+import CertificateModul from "./components/Certificate-modal/CertificateModul";
+import Modals from "./components/Certificate-modal/Modal";
+import StudentsEnrolled from "./components/Students-enrolled/StudentsEnrolled";
+import StudentsEnrolledData from "./components/Students-enrolled/StudentsEnrolledData";
 import Routing from "./Router/Router";
 function App() {
   return (
     <>
       <Routing />
-      {/* <AddCources /> */}
-      {/* <Demo /> */}
-      {/* <DescribeCourse /> */}
-      {/* <AddSyllabus /> */}
-      {/* <TopNavbar /> */}
+      {/* <CertificateModul /> */}
+      {/* <Modals />
+      <StudentsEnrolled />
+      <StudentsEnrolledData /> */}
     </>
   );
 }

@@ -11,7 +11,11 @@ function AddSyllabus() {
           <button className="add-Syllabus-btn">Add Topic</button>
         </div>
         <div className="syllabus-input-main">
-          <input type="text" className="syllabus-input" />
+          <input
+            type="text"
+            className="syllabus-input"
+            placeholder="Topic name"
+          />
           <DeleteIcon />
         </div>
         <p className="add-assessment">

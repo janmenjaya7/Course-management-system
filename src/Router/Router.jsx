@@ -11,7 +11,6 @@ import InstructorRegister from "../components/instructor/InstructorRegister";
 import InstructorLogin from "../components/instructor/InstructorLogin";
 // import AddCources from "../components/Add-cources/AddCources";
 import InstractorMyCourse from "../components/instractor-sections/InstractorMyCourse";
-import AddBasicDetails from "../components/Add-course-froms/AddBasicDetais";
 import TopNavbar from "../components/Add-course-froms/TopNavbar";
 function Routing() {
   const location = useLocation();
