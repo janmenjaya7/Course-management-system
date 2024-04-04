@@ -6,10 +6,10 @@ function DescribeCourse() {
   return (
     <>
       <div style={{ margin: "0 150px" }}>
-        <p>Complete Course Description</p>
+        <p style={{ marginTop: "10px" }}>Complete Course Description</p>
         <ReactQuill
           theme="snow"
-          placeholder="write your content ...."
+          placeholder="Enter complete course description"
           style={{ height: "350px" }}
         ></ReactQuill>
         <div className="about-section">
