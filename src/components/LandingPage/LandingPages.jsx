@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 
 function LandingPages() {
   const navigate = useNavigate();
-
   return (
     <>
       <div id="main-section">
@@ -17,7 +16,7 @@ function LandingPages() {
           <div className="text-section">
             <div className=" text-center">
               <h3>for bootcamp usecase</h3>
-              <h1>Wireframes on Course web app</h1>
+              <div className="heding-landing">Wireframes on Course web app</div>
             </div>
           </div>
           <div className="btn-landing ">
@@ -26,11 +25,16 @@ function LandingPages() {
             </button>
             <button
               className="btn-student"
-              onClick={() => navigate("/register")}
+              onClick={() => navigate("/student/register")}
             >
               Student module
             </button>
-            <button className="btn-instructor">Instructor Module</button>
+            <button
+              className="btn-instructor"
+              onClick={() => navigate("/instructor")}
+            >
+              Instructor Module
+            </button>
           </div>
         </div>
       </div>
