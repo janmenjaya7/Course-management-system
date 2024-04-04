@@ -1,0 +1,40 @@
+.add-card-sec {
+  width: 572px;
+  height: 158px;
+  background: #ffffff;
+  box-shadow: 0px 2px 12px #00000049;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+}
+.img-card {
+  width: 126px;
+  height: 126px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.card-inner-sec {
+  display: flex;
+  /* flex-direction: column; */
+}
+.card-dtl {
+  width: 100%;
+  /* padding: 10px; */
+}
+.stduent-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heding-text {
+  /* margin-top: 5px; */
+  font-size: 16px;
+  font-family: Open Sans;
+  letter-spacing: 0px;
+  color: #101c36;
+}
+.icons-sec{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

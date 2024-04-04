@@ -1,5 +1,5 @@
 import React from 'react'
-
+// reusable component
 const Input = ({type,label}) => {
   return (
     <>

@@ -1,14 +1,15 @@
 import React from "react";
 import Input from "../inpute/Input";
 import password from "../../assets/passwordicon/eye.svg";
-
-function Login({ heding, title }) {
+import { useNavigate } from "react-router-dom";
+const InstructorLogin = ({ heading, title }) => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="outersection">
         <div className="container container-box">
           <form>
-            <h1 className="heading">{heding}</h1>
+            <h1 className="heading">{heading}</h1>
             <h4 className="Register-Now">{title}</h4>
             <Input type={"email"} label={"Email id"} />
             <div className="password-input">
@@ -16,6 +17,7 @@ function Login({ heding, title }) {
               {<img className="img-section" src={password} alt="icon" />}
             </div>
             <button
+              onClick={() => navigate("/instructor/myCourse")}
               type="submit"
               className="btn custom-button"
               style={{
@@ -38,6 +40,6 @@ function Login({ heding, title }) {
       </h5>
     </div>
   );
-}
+};
 
-export default Login;
+export default InstructorLogin;

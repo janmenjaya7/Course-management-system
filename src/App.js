@@ -1,20 +1,19 @@
-
-import './App.css'
-import React from 'react'
-import CustomizedAccordions from './components/courses/Faq'
-import CourseCardDetails from './components/courses/CoursesCardDetails'
-import Syllabus from './components/courses/Syllabus'
-
+import "./App.css";
+import AddSyllabus from "./components/Add-course-froms/AddSyllabus";
+import DescribeCourse from "./components/Add-course-froms/DescribeCourse";
+import TopNavbar from "./components/Add-course-froms/TopNavbar";
+// import AddCources from "./components/Add-cources/AddCources";
+import Routing from "./Router/Router";
 function App() {
   return (
     <>
-      <CourseCardDetails />
-      <Syllabus />
-      <CustomizedAccordions />
-      <CustomizedAccordions />
-      <CustomizedAccordions />
-      <CustomizedAccordions />
+      <Routing />
+      {/* <AddCources /> */}
+      {/* <Demo /> */}
+      {/* <DescribeCourse /> */}
+      {/* <AddSyllabus /> */}
+      {/* <TopNavbar /> */}
     </>
-  )
+  );
 }
-export default App
+export default App;

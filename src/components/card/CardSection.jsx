@@ -10,8 +10,8 @@ import image8 from "../../assets/markus-spiske-8/markus-spiske-1LLh8k2_YFk-unspl
 import image9 from "../../assets/markus-spiske-9/markus-spiske-1LLh8k2_YFk-unsplash.png";
 export const data = [
   {
-    heding: "Learn java programming : for absolute beginners",
     image: javaImg,
+    heding: "Learn java programming : for absolute beginners",
     name: "janmenjaya",
     day: "10",
     Assignments: "22",

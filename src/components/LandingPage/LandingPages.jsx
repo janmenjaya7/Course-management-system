@@ -2,8 +2,10 @@ import React from "react";
 import "../LandingPage/landingPages.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../../assets/logo/Group.svg";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 function LandingPages() {
+  const navigate = useNavigate();
   return (
     <>
       <div id="main-section">
@@ -14,15 +16,25 @@ function LandingPages() {
           <div className="text-section">
             <div className=" text-center">
               <h3>for bootcamp usecase</h3>
-              <h1>Wireframes on Course web app</h1>
+              <div className="heding-landing">Wireframes on Course web app</div>
             </div>
           </div>
           <div className="btn-landing ">
-            <button className="btn-guest">
-              <Link to="/card">uest/ Not registered User</Link>
+            <button className="btn-guest" onClick={() => navigate("/card")}>
+              uest/ Not registered User
             </button>
-            <button className="btn-student">Student module</button>
-            <button className="btn-instructor">Instructor Module</button>
+            <button
+              className="btn-student"
+              onClick={() => navigate("/student/register")}
+            >
+              Student module
+            </button>
+            <button
+              className="btn-instructor"
+              onClick={() => navigate("/instructor")}
+            >
+              Instructor Module
+            </button>
           </div>
         </div>
       </div>
