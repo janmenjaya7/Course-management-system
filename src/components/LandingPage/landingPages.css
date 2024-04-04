@@ -1,5 +1,5 @@
 #main-section {
-  margin: 100px;
+  /* margin: 100px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
   background: #ffffff;
 }
 .logos {
-  padding: 30px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,10 +15,11 @@
 .text-section {
   border: 1px solid #eeeeee;
   border-radius: 10px;
+  width: 862px;
   height: 217px;
   box-shadow: 0px 3px 6px #00000029;
   padding: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +46,7 @@
   background: #1d366f;
   border-radius: 10px;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   outline: none;
   border: none;
   font-size: 17px;
@@ -54,7 +55,7 @@
   width: 269px;
   height: 60px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #fff;
   outline: none;
   border: 1px solid #1d366f;
@@ -63,7 +64,7 @@
 .btn-student {
   width: 269px;
   height: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #fff;
   outline: none;
   border: 1px solid #1d366f;

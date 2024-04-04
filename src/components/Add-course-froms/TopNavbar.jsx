@@ -9,6 +9,8 @@ import LinearProgress, {
 import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import AddBasicDetails from "./AddBasicDetais";
+import AddSyllabus from "./AddSyllabus";
+import DescribeCourse from "./DescribeCourse";
 
 const steps = ["Add basic detais", "Describe course", "Add Syllabus"];
 
@@ -35,8 +37,6 @@ function TopNavbar() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
     setAdd((val) => val - 100 / 3);
   };
-  if (activeStep === 0) {
-  }
   return (
     <>
       <div className="top-navsec">
@@ -65,7 +65,7 @@ function TopNavbar() {
           </div>
           <div>
             <Button
-              color="inherit"
+              variant="outlined"
               disabled={activeStep === 0}
               onClick={handelBack}
             >
@@ -82,6 +82,13 @@ function TopNavbar() {
         </div>
         <BorderLinearProgress variant="determinate" value={add} />
       </div>
+      {activeStep === 0 ? (
+        <AddBasicDetails />
+      ) : activeStep === 1 ? (
+        <DescribeCourse />
+      ) : activeStep === 2 ? (
+        <AddSyllabus />
+      ) : null}
     </>
   );
 }
