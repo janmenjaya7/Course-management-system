@@ -8,7 +8,7 @@ import image5 from "../../assets/markus-spiske-5/markus-spiske-1LLh8k2_YFk-unspl
 import image7 from "../../assets/markus-spiske-7/markus-spiske-1LLh8k2_YFk-unsplash.png";
 import image8 from "../../assets/markus-spiske-8/markus-spiske-1LLh8k2_YFk-unsplash.png";
 import image9 from "../../assets/markus-spiske-9/markus-spiske-1LLh8k2_YFk-unsplash.png";
-const data = [
+export const data = [
   {
     heding: "Learn java programming : for absolute beginners",
     image: javaImg,
