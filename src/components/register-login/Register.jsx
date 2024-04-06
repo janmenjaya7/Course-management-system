@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import passwordicon from "../../assets/passwordicon/eye.svg";
 import Input from "../inpute/Input";
 import { useNavigate } from "react-router-dom";
+
 const Register = ({ heding, title }) => {
   const navigate=useNavigate()
   return (
@@ -46,3 +47,4 @@ const Register = ({ heding, title }) => {
 };
 
 export default Register;
+

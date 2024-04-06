@@ -25,11 +25,12 @@ export default function MyTabs() {
           },
           '& .Mui-selected': {
             color: '#262626',
-            fontWeight: 'bold',fontFamily:"Open Sans"
+            fontWeight: 'bold',
+            fontFamily: 'Open Sans',
           },
         }}
       >
-        <Tab value={0} label="Syllabus" />
+        <Tab value={0} label="Syllabus" sx={{ textTransform: 'capitalize' }} />
         <Tab value={1} label="Overview" />
         <Tab value={2} label="Forum" />
         <Tab value={3} label="FAQs" />
