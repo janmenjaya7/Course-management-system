@@ -12,7 +12,7 @@ function CardFroumSec() {
   ];
   return (
     <>
-      <div>
+      <div id="froum-contener">
         <div className="froum-input">
           <div className="serch-inputs">
             <span className="input-serch">

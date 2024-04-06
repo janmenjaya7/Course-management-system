@@ -1,10 +1,10 @@
-import React from 'react'
-import './Overview.css'
-import SizesChips from './SizesChips'
+import React from "react";
+import "./Overview.css";
+import SizesChips from "./SizesChips";
 
 function Overview() {
   return (
-    <>  
+    <>
       <div className="overviewClass">
         <div className="headingOverview">
           <b className="subtitleClass">About this course</b>
@@ -44,7 +44,7 @@ function Overview() {
         </div>
       </div>
       <div className="heding-dis">
-        <div  className='descriptionClassMain'>
+        <div className="descriptionClassMain">
           <div className="descriptionClass">
             <p>
               <b>Description</b>
@@ -70,8 +70,7 @@ function Overview() {
         <div>
           <div className="requirementClass">
             <p>
-              {' '}
-              <b>Requirement</b>{' '}
+              <b>Requirement</b>
             </p>
           </div>
           <div className="discSecContent">
@@ -104,7 +103,6 @@ function Overview() {
         <div>
           <div className="atTheEnd">
             <p>
-              {' '}
               <b>At end what you will learn</b>
             </p>
           </div>
@@ -134,38 +132,37 @@ function Overview() {
         </div>
       </div>
       <div className="heding-dis">
-        <div className='instructorClass'>
-          <p >
-        <b >Instructor</b>
-
+        <div className="instructorClass">
+          <p>
+            <b>Instructor</b>
           </p>
-
         </div>
-        <div className='masterName'>
-        <p>  <b>Dev kanda</b></p>
-
+        <div className="masterName">
+          <p>
+            {" "}
+            <b>Dev kanda</b>
+          </p>
         </div>
-        <div  className='instructorClass2'>
-
-        <p  className='instructorClass2para1' >
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-          et justo duo dolores et ea
-        </p>
-        <p  className='instructorClass2para2'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit
-          vero aut suscipit nisi tempore adipisci incidunt corrupti quaerat
-          quisquam!
-        </p>
+        <div className="instructorClass2">
+          <p className="instructorClass2para1">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea
+          </p>
+          <p className="instructorClass2para2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit
+            vero aut suscipit nisi tempore adipisci incidunt corrupti quaerat
+            quisquam!
+          </p>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Overview
+export default Overview;

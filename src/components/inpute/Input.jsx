@@ -1,6 +1,6 @@
 import React from 'react'
 // reusable component
-const Input = ({type,label}) => {
+const Input = ({type,label,placeholder}) => {
   return (
     <>
     <div>
@@ -13,6 +13,7 @@ const Input = ({type,label}) => {
         </label>
         <input
           type={type}
+          placeholder={placeholder}
           className="form-control shadow-none"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"

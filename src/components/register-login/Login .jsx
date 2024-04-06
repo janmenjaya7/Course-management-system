@@ -10,21 +10,24 @@ function Login({ heding, title }) {
           <form>
             <h1 className="heading">{heding}</h1>
             <h4 className="Register-Now">{title}</h4>
-            <Input type={"email"} label={"Email id"} />
+            <Input type={"email"} label={"Email id"} placeholder={"Email"} />
             <div className="password-input">
-              <Input type={"password"} label={"Password"} />
+              <Input
+                type={"password"}
+                label={"Password"}
+                placeholder={"Password"}
+              />
               {<img className="img-section" src={password} alt="icon" />}
             </div>
             <button
               type="submit"
               className="btn custom-button"
               style={{
-                backgroundColor: "#1D366F",
-                background: "#1D366F 0% 0% no-repeat padding-box",
+                background: "#1D366F",
                 color: "#FFFFFF",
               }}
             >
-              Register
+              Login
             </button>
             <p className="paragraph">
               By continuing, you agree to our <span>Terms of Use</span> and
