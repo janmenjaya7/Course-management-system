@@ -15,13 +15,13 @@ function LandingPages() {
           </div>
           <div className="text-section">
             <div className=" text-center">
-              <h3>for bootcamp usecase</h3>
+              <h3>For bootcamp usecase</h3>
               <div className="heding-landing">Wireframes on Course web app</div>
             </div>
           </div>
           <div className="btn-landing ">
-            <button className="btn-guest" onClick={() => navigate("/card")}>
-              uest/ Not registered User
+            <button className="btn-guest" onClick={() => navigate("/courses")}>
+              Guest/ not registered user
             </button>
             <button
               className="btn-student"

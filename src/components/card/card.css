@@ -31,18 +31,19 @@
 }
 .java-programming {
   color: #101c36;
-  font-size: 20px;
-  font-family: Open Sans;
-  /* opacity: 1; */
+  font-size: 17px;
+  font-family: "Open Sans";
 }
 .name-sec {
   color: #999999;
-  /* margin-top: 10px; */
   display: flex;
   align-items: center;
+  font-size: 15px;
 }
 .submit-due {
   margin-top: 5px;
+  font-size: 12px;
+  color: #999999;
 }
 .img-sec {
   position: relative;
