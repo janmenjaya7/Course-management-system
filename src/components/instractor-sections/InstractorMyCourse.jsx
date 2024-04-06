@@ -14,7 +14,7 @@ function InstractorMyCourse() {
           <p>No courses added</p>
           <button
             className="btn-my-cources"
-            onClick={() => navigate("/instructor/myCourse/addCourses")}
+            onClick={() => navigate("/instructor/myCourse/addCourses/")}
           >
             Add Course Now
           </button>

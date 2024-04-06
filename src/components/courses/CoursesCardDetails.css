@@ -2,9 +2,11 @@
   margin: 0;
   padding: 0;
 }
+#course-details {
+  padding: 0 100px;
+}
 .breadCrumb {
   display: block;
-
 }
 .headingClass {
   color: #252d41;
@@ -12,12 +14,12 @@
   font-family: "Open Sans";
 }
 
-
 .primaryDiv1 {
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
+  /* padding: 0 100px; */
 }
 .list-item {
   list-style: none;
@@ -26,13 +28,10 @@
   color: #999999;
   font-size: 14px;
   font-family: "Open Sans";
-
 }
-.btnClassCourse{
-margin-bottom: 40px;
+.btnClassCourse {
+  margin-bottom: 40px;
 }
-
-
 
 .btn-enroll {
   width: 140px;
@@ -40,7 +39,7 @@ margin-bottom: 40px;
   background: #1d366f 0% 0% no-repeat padding-box;
   border-radius: 4px;
   text-align: center;
-  font-size: 18px ;
+  font-size: 15px;
   color: #ffffff;
   outline: none;
   border: none;
@@ -50,25 +49,22 @@ margin-bottom: 40px;
 
 .subtitleClass {
   font-size: 21px;
-  letter-spacing: 0px;
   color: #252d41;
   width: 158px;
   height: 24px;
   margin-bottom: 15px;
 }
 
-
-
 .paraClass {
   font-size: 19px;
-  font-family: open Sans;
+  font-family: "open Sans";
   letter-spacing: 0px;
   color: #252d41;
   opacity: 1;
 }
 
 .tabNav {
-  width: 1366px;
+  /* width: 1366px; */
   height: 58px;
   background: #ffffff;
   box-shadow: 0px 3px 6px #0000000f;
@@ -76,17 +72,11 @@ margin-bottom: 40px;
   margin-right: 0;
 }
 
-
-
-
-
 .heding-dis {
-  margin: 0 100px;
   padding: 20px;
   box-shadow: 0px 2px 4px #21212197;
-  border-radius: 10px;
-  margin-bottom: 20px;
   color: #212121;
+  border-radius: 5px;
 }
 
 .instructorName {
@@ -94,27 +84,26 @@ margin-bottom: 40px;
   color: #212121;
 }
 
-.breadCrumbsClass{
-margin-bottom: 20px;
+.breadCrumbsClass {
+  margin-bottom: 20px;
 }
 
-.paraCourse{
-font-size: 14px;
-font-family: "Open Sans";
+.paraCourse {
+  font-size: 14px;
+  font-family: "Open Sans";
 }
 
-.paraCourse1{
-  color: #252D41;
+.paraCourse1 {
+  color: #252d41;
   opacity: 0.7;
   font-size: 14px;
 }
 
-
-.headingClassmain{
-margin-bottom: 16px;
+.headingClassmain {
+  margin-bottom: 16px;
 }
 
-.paraCourse{
+.paraCourse {
   width: 499px;
   height: 40px;
   margin-bottom: 8px;

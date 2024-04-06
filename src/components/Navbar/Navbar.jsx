@@ -6,22 +6,31 @@ import "./navbar.css";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import instractor from "../../assets/logo/iNSTRUCTOR.svg";
+import CardSection from "../card/CardSection";
+import Faq from "../courses/Faq";
 
 function Navbar() {
   const [value, setValue] = useState(0);
+  const navigate = useNavigate();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    navigate(newValue ? "/faq" : "/courses");
   };
-  const navigate = useNavigate();
-  const location = useLocation();
+  const { pathname } = useLocation();
+  console.log(pathname);
+
   return (
     <>
-      <div className="navbar-sec">
+      <div className="navbar-sections">
         <Link to="/">
           <img src={logo} alt="somlog" />
+          {pathname.startsWith("/instructor") ? (
+            <img src={instractor} alt="instractor" />
+          ) : null}
         </Link>
-        {location.pathname === "/card" ? (
+        {pathname === "/courses" || pathname === "/faq" ? (
           <>
             <div className="liest-section">
               <Tabs
@@ -29,22 +38,31 @@ function Navbar() {
                 onChange={handleChange}
                 aria-label="basic tabs example"
               >
-                <Tab label="Courses" className="tab-mui" />
-                <Tab label="FAQs" />
+                <Tab label="Courses" className="tab-liest" />
+                <Tab label="Dashboard" className="tab-liest" />
+                <Tab label="Form" className="tab-liest" />
+                <Tab label="FAQs" className="tab-liest" />
               </Tabs>
               <li value={value} index={0}></li>
               <li value={value} index={1}></li>
             </div>
             <div className="btn-section">
-              <div>Teach on e2eHiring</div>
-              <Button variant="outlined" onClick={() => navigate("./login")}>
+              <Link to="/instructor" className="trach-text">
+                Teach on e2eHiring
+              </Link>
+              <Button
+                variant="outlined"
+                className="tab-liest"
+                onClick={() => navigate("./login")}
+              >
                 Login
               </Button>
               <Button
                 variant="contained"
                 onClick={() => navigate("./register")}
+                className="tab-liest"
               >
-                Register Now
+                Register now
               </Button>
             </div>
             {/* </div> */}
