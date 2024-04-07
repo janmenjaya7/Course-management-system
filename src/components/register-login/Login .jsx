@@ -1,12 +1,13 @@
 import React from "react";
 import Input from "../inpute/Input";
 import password from "../../assets/passwordicon/eye.svg";
+import "./login.css";
 
 function Login({ heding, title }) {
   return (
-    <div>
+    <div id="login-main-section">
       <div className="outersection">
-        <div className="container container-box">
+        <div className="container-login">
           <form>
             <h1 className="heading">{heding}</h1>
             <h4 className="Register-Now">{title}</h4>
@@ -36,9 +37,9 @@ function Login({ heding, title }) {
           </form>
         </div>
       </div>
-      <h5 className="login-link">
+      <div className="login-link">
         Already have an account? <span>Login</span>
-      </h5>
+      </div>
     </div>
   );
 }
