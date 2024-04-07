@@ -14,7 +14,6 @@ function CardFroumSec() {
     { time: 6, course: 5, topic: 5, answer: "Answered" },
   ];
 
-  // kkk
   return (
     <>
       <Modals open={open} setOpen={setOpen} />
