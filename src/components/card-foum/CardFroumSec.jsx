@@ -16,11 +16,7 @@ function CardFroumSec() {
 
   return (
     <>
-      <Modals
-        open={open}
-        setOpen={setOpen}
-        // ModalsContent={<Login setOpen={setOpen} />}
-      />
+      <Modals open={open} setOpen={setOpen} />
       <div id="froum-contener">
         <div className="froum-input">
           <div className="serch-inputs">
