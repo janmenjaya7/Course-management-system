@@ -7,9 +7,9 @@ import { useNavigate } from "react-router-dom";
 const Register = ({ heding, title }) => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div id="register-main-section">
       <div className="outersection">
-        <div className="container container-box">
+        <div className="container-box">
           <form onSubmit="#">
             <h1 className="heading">{heding}</h1>
             <h4 className="Register-Now">{title}</h4>
@@ -45,9 +45,9 @@ const Register = ({ heding, title }) => {
             </p>
           </form>
         </div>
-        <div className="login-link">
-          Already have an account? <span>Login</span>
-        </div>
+      </div>
+      <div className="login-link">
+        Already have an account? <span>Login</span>
       </div>
     </div>
   );
