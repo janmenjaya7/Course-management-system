@@ -45,10 +45,10 @@ const Register = ({ heding, title }) => {
             </p>
           </form>
         </div>
+        <div className="login-link">
+          Already have an account? <span>Login</span>
+        </div>
       </div>
-      <h5 className="login-link">
-        Already have an account? <span>Login</span>
-      </h5>
     </div>
   );
 };

@@ -8,7 +8,7 @@
   padding: 0 100px;
 }
 .card-froum {
-  height: 147px;
+  /* height: 147px; */
   background: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 5px;
@@ -21,9 +21,9 @@
   align-items: center;
 }
 .froum-box {
-  width: 50px;
+  width: 80px;
   height: 40px;
-  background: #eeeeee;
+  background: #a5c7f9b4;
   border-radius: 5px;
   margin-right: 10px;
 }
@@ -43,7 +43,7 @@
 .froum-input {
   display: flex;
   justify-content: space-between;
-  padding: 20px 140px;
+  padding: 20px 100px;
 }
 .input-serch {
   position: relative;
@@ -55,7 +55,7 @@
   transform: translateY(-50%);
 }
 .inputs {
-  width: 350px;
+  width: 300px;
   height: 44px;
   background: #fcfcfc;
   border: 1px solid #c9c9c9;
@@ -63,12 +63,15 @@
 }
 .btn-course {
   padding: 0 50px;
+  /* height: 44px; */
+  font-size: 12px;
   background: #ffffff;
   border: 1px solid #c9c9c9;
   border-radius: 10px;
 }
 .btn-asked {
-  padding: 10px 50px;
+  padding: 0 40px;
+  height: 40px;
   background: #262626;
   border-radius: 4px;
   color: #fff;
