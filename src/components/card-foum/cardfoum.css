@@ -1,0 +1,80 @@
+#froum-contener {
+  margin-top: 50px;
+}
+.main-froum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+.card-froum {
+  /* height: 147px; */
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  opacity: 1;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+.froum-sec {
+  display: flex;
+  align-items: center;
+}
+.froum-box {
+  width: 80px;
+  height: 40px;
+  background: #a5c7f9b4;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.from-text-sec {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+.from-chip {
+  display: flex;
+  justify-content: space-between;
+}
+.serch-inputs {
+  display: flex;
+  gap: 30px;
+}
+.froum-input {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+.input-serch {
+  position: relative;
+}
+.serch-icon {
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.inputs {
+  width: 300px;
+  height: 44px;
+  background: #fcfcfc;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+}
+.btn-course {
+  padding: 0 50px;
+  /* height: 44px; */
+  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+}
+.btn-asked {
+  padding: 0 40px;
+  height: 40px;
+  background: #262626;
+  border-radius: 4px;
+  color: #fff;
+  border: none;
+  outline: none;
+}

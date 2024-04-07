@@ -3,7 +3,9 @@ import "./register.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import passwordicon from "../../assets/passwordicon/eye.svg";
 import Input from "../inpute/Input";
+import { useNavigate } from "react-router-dom";
 const Register = ({ heding, title }) => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="outersection">
@@ -11,13 +13,22 @@ const Register = ({ heding, title }) => {
           <form onSubmit="#">
             <h1 className="heading">{heding}</h1>
             <h4 className="Register-Now">{title}</h4>
-            <Input type={"name"} label={"Full Name"} />
-            <Input type={"email"} label={"Email id"} />
+            <Input
+              type={"text"}
+              label={"Full name"}
+              placeholder={"Full name"}
+            />
+            <Input type={"email"} label={"Email id"} placeholder={"Email"} />
             <div className="password-input">
-              <Input type={"password"} label={"Password"} />
+              <Input
+                type={"password"}
+                label={"Password"}
+                placeholder={"Password"}
+              />
               {<img className="img-section" src={passwordicon} alt="icon" />}
             </div>
             <button
+              onClick={() => navigate("/student/login")}
               type="submit"
               className="btn custom-button"
               style={{
@@ -34,10 +45,10 @@ const Register = ({ heding, title }) => {
             </p>
           </form>
         </div>
+        <div className="login-link">
+          Already have an account? <span>Login</span>
+        </div>
       </div>
-      <h5 className="login-link">
-        Already have an account? <span>Login</span>
-      </h5>
     </div>
   );
 };

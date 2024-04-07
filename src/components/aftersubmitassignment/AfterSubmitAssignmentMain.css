@@ -1,0 +1,39 @@
+.mainDiv{
+background-color: #ffffff;
+margin-top: 20px;
+font-family: "Open Sans";
+
+}
+.breadMainAfter{
+
+  margin: 0px 100px;
+}
+.statusDivAssess{
+height: 56px;
+background-color: #F8F8F8 ;
+margin-top: 22px;
+display: flex;
+margin-bottom: 19px;
+}
+
+.statusDivAssess1{
+font-family: "Open Sans";
+color: #212121;
+font-size: 14px;
+margin-top: 19px;
+margin-left: 100px;
+}
+
+.statusDivAssess2{
+  font-family: "Open Sans";
+  color: #212121;
+  font-size: 14px;
+  margin-top: 19px;
+  margin-left: 100px;
+}
+
+
+
+.statusDivAssess3{
+margin-top: 19px;
+}
