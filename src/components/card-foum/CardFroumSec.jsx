@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import CardFoum from "./CardFoum";
 import search from "../../assets/serch-icon/search-24px.svg";
 import Modals from "../Certificate-modal/Modal";
-import Login from "../register-login/Login ";
 
 function CardFroumSec() {
   const [open, setOpen] = useState(false);
@@ -14,6 +13,7 @@ function CardFroumSec() {
     { time: 7, course: 4, topic: 4, answer: "Answered" },
     { time: 6, course: 5, topic: 5, answer: "Answered" },
   ];
+
   return (
     <>
       <Modals
