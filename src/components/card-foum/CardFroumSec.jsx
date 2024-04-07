@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import CardFoum from "./CardFoum";
 import search from "../../assets/serch-icon/search-24px.svg";
+import Modals from "../Certificate-modal/Modal";
+import Login from "../register-login/Login ";
 
 function CardFroumSec() {
+  const [open, setOpen] = useState(false);
+  const handleOpenEnroll = () => setOpen(true);
   const num = [
     { time: 8, course: 1, topic: 1, answer: "Not answered" },
     { time: 5, course: 2, topic: 2, answer: "Answered" },
@@ -12,6 +16,11 @@ function CardFroumSec() {
   ];
   return (
     <>
+      <Modals
+        open={open}
+        setOpen={setOpen}
+        // ModalsContent={<Login setOpen={setOpen} />}
+      />
       <div id="froum-contener">
         <div className="froum-input">
           <div className="serch-inputs">
@@ -23,7 +32,9 @@ function CardFroumSec() {
             <button className="btn-course">All Topics</button>
           </div>
           <div>
-            <button className="btn-asked">Asked</button>
+            <button className="btn-asked" onClick={handleOpenEnroll}>
+              Asked
+            </button>
           </div>
         </div>
         {num.map((item) => (

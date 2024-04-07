@@ -3,24 +3,20 @@ import MyTabs from "./MyTabs";
 import "./CoursesCardDetails.css";
 import BasicBreadcrumbs from "./BasicBreadcrumbs";
 import SizesChips from "./SizesChips";
-import { useNavigate } from "react-router-dom";
 import Modals from "../Certificate-modal/Modal";
 import { useState } from "react";
-import CertificateModul from "../Certificate-modal/CertificateModul";
+import Register from "../register-login/Register";
+import Login from "../register-login/Login ";
 
 function CoursesCardDetails() {
   const [open, setOpen] = useState(false);
   const handleOpenEnroll = () => setOpen(true);
-  // const handleCloseEnroll = () => {
-  //   console.log("object");
-  //   setOpen(false);
-  // };
   return (
     <>
       <Modals
         open={open}
         setOpen={setOpen}
-        ModalsContent={<CertificateModul setOpen={setOpen} />}
+        ModalsContent={<Register setOpen={setOpen} />}
       />
       <div id="course-details">
         <div className="primaryDiv1">

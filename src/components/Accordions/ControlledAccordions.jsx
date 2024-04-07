@@ -21,7 +21,7 @@ function ControlledAccordions() {
           marginBottom: "5px",
           borderRadius: "5px 5px 1px 1px",
         }}
-        expanded={expanded !== "panel1"}
+        expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
         <AccordionSummary
