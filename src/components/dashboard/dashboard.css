@@ -1,0 +1,25 @@
+.dashboard-Card{
+    display: flex;
+    /* column-gap: 10px; */
+    gap: 10px;
+    padding: 30px;
+
+    /* border: 1px solid #EEEEEE; */
+    /* border: 1px solid red; */
+    
+
+}
+.main-card{
+    margin: auto;
+
+    /* border: 1px solid black; */
+  width: 83%;
+  background-color: #FFFFFF 0% 0% no-repeat padding-box;
+  background-color: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box; 
+}
+.nav-sec{
+    /* border: 1px solid red; */
+    padding: 10px;
+     border: 1px solid #EEEEEE;
+     background-color: #FFFFFF 0% 0% no-repeat padding-box;;
+}

@@ -37,9 +37,7 @@ const InstructorRegister = ({heding,title}) => {
     <h5 className="login-link">
       Already have an account? <span>Login</span>
     </h5>
-    <Searchnav />
-      <InstructorRegister heding="Start teaching on e2eHiring" title="Register as Instructor" />
-      <InstructorLogin heading=" Welcome back" title="Instructor Login" />
+   
   </div>
   )
 }
