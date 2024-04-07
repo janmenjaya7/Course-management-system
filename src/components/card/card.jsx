@@ -1,10 +1,10 @@
 import React from "react";
-import "../card/card.css";
+import "./card.css";
 import logo from "../../assets/Group-icon/Group 63691.png";
 import clock from "../../assets/logo/clock.svg";
 import Chip from "@mui/material/Chip";
 
-function card({ name, day, Assignments, time, image, chip, heding }) {
+function Card({ name, day, Assignments, time, image, chip, heding }) {
   return (
     <>
       {/* <Navbar /> */}
@@ -41,4 +41,4 @@ function card({ name, day, Assignments, time, image, chip, heding }) {
   );
 }
 
-export default card;
+export default Card;
