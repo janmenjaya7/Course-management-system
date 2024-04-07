@@ -19,7 +19,7 @@ function Navbar() {
     navigate(newValue ? "/faq" : "/courses");
   };
   const { pathname } = useLocation();
-  console.log(pathname);
+  // console.log(pathname);
 
   return (
     <>
@@ -30,7 +30,9 @@ function Navbar() {
             <img src={instractor} alt="instractor" />
           ) : null}
         </Link>
-        {pathname === "/courses" || pathname === "/faq" ? (
+        {pathname === "/courses" ||
+        pathname === "/faq" ||
+        pathname.startsWith("/courses") ? (
           <>
             <div className="liest-section">
               <Tabs
@@ -39,8 +41,8 @@ function Navbar() {
                 aria-label="basic tabs example"
               >
                 <Tab label="Courses" className="tab-liest" />
-                <Tab label="Dashboard" className="tab-liest" />
-                <Tab label="Form" className="tab-liest" />
+                {/* <Tab label="Dashboard" className="tab-liest" />
+                <Tab label="Form" className="tab-liest" /> */}
                 <Tab label="FAQs" className="tab-liest" />
               </Tabs>
               <li value={value} index={0}></li>

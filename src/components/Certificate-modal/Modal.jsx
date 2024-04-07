@@ -11,19 +11,25 @@ const style = {
   transform: "translate(-50%, -50%)",
 };
 
-export default function Modals() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
+export default function Modals({
+  open,
+  handleCloseEnroll,
+  setOpen,
+  ModalsContent,
+}) {
   return (
-    <div>
-      <Button onClick={handleOpen}>Open modal</Button>
-      <Modal open={open} onClose={handleClose}>
-        <Box sx={style}>
-          <CertificateModul handleClose={handleClose} />
-        </Box>
+    <>
+      <Modal
+        open={open}
+        setOpen={setOpen}
+        onClose={handleCloseEnroll}
+        // ModalsContent={<p>hi dsklaj</p>}
+      >
+        <Box sx={style}>{ModalsContent}</Box>
       </Modal>
-    </div>
+    </>
   );
+}
+{
+  /* <CertificateModul setOpen={setOpen}/> */
 }

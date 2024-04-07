@@ -34,17 +34,15 @@
 }
 
 .btn-enroll {
-  width: 140px;
-  height: 40px;
-  background: #1d366f 0% 0% no-repeat padding-box;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 15px;
-  color: #ffffff;
+  background: #1d366f;
+  border-radius: 5px;
+  font-size: 13px;
+  color: #fff;
   outline: none;
   border: none;
-  margin-top: 16px;
+  margin: 10px 0;
   font-family: "Open Sans";
+  padding: 10px 20px;
 }
 
 .subtitleClass {

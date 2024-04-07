@@ -3,7 +3,7 @@ import "./certificate-modul.css";
 import ClearIcon from "@mui/icons-material/Clear";
 import DownloadIcon from "@mui/icons-material/Download";
 
-function CertificateModul({ handleClose }) {
+function CertificateModul({ setOpen }) {
   return (
     <>
       <div>
@@ -15,7 +15,12 @@ function CertificateModul({ handleClose }) {
                 <DownloadIcon />
                 Download
               </button>
-              <ClearIcon onClick={handleClose} style={{ cursor: "pointer" }} />
+              <ClearIcon
+                onClick={() => {
+                  setOpen(false);
+                }}
+                style={{ cursor: "pointer" }}
+              />
             </div>
           </div>
           <div className="cetificate-body">

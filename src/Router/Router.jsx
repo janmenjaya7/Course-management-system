@@ -12,11 +12,11 @@ import InstructorLogin from "../components/instructor/InstructorLogin";
 // import AddCources from "../components/Add-cources/AddCources";
 import InstractorMyCourse from "../components/instractor-sections/InstractorMyCourse";
 import TopNavbar from "../components/Add-course-froms/TopNavbar";
-import Faq from "../components/courses/Faq";
 import CoursesCardDetails from "../components/courses/CoursesCardDetails";
 import Syllabus from "../components/courses/Syllabus";
 import Overview from "../components/courses/Overview";
 import CardFroumSec from "../components/card-foum/CardFroumSec";
+import FaqSection from "../components/courses/FaqSection";
 function Router({ id }) {
   const location = useLocation();
   return (
@@ -25,7 +25,7 @@ function Router({ id }) {
       <Routes>
         <Route path="/" element={<LandingPages />} />
         <Route path="/courses" element={<CardSection />} />
-        <Route path="/faq" element={<Faq />} />
+        <Route path="/faq" element={<FaqSection />} />
         <Route path="/Syllabus" element={<Syllabus />} />
         <Route path="/Overview" element={<Overview />} />
         <Route path="/Forum" element={<CardFroumSec />} />
