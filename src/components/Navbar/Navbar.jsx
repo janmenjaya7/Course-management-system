@@ -7,8 +7,6 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import instractor from "../../assets/logo/iNSTRUCTOR.svg";
-import CardSection from "../card/CardSection";
-import Faq from "../courses/Faq";
 
 function Navbar() {
   const [value, setValue] = useState(0);
@@ -16,7 +14,17 @@ function Navbar() {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    navigate(newValue ? "/faq" : "/courses");
+    navigate(
+      newValue === 0
+        ? "/courses"
+        : newValue === 1
+        ? "/dashboard"
+        : newValue === 2
+        ? "/foum"
+        : newValue === 3
+        ? "/faq"
+        : null
+    );
   };
   const { pathname } = useLocation();
   // console.log(pathname);
@@ -41,15 +49,17 @@ function Navbar() {
                 aria-label="basic tabs example"
               >
                 <Tab label="Courses" className="tab-liest" />
-                {/* <Tab label="Dashboard" className="tab-liest" />
-                <Tab label="Form" className="tab-liest" /> */}
+                <Tab label="Dashboard" className="tab-liest" />
+                <Tab label="Form" className="tab-liest" />
                 <Tab label="FAQs" className="tab-liest" />
               </Tabs>
               <li value={value} index={0}></li>
               <li value={value} index={1}></li>
+              <li value={value} index={2}></li>
+              <li value={value} index={3}></li>
             </div>
             <div className="btn-section">
-              <Link to="/instructor" className="trach-text">
+              <Link to="/instructor/register" className="trach-text">
                 Teach on e2eHiring
               </Link>
               <Button

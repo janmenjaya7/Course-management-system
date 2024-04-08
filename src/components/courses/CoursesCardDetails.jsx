@@ -6,7 +6,6 @@ import SizesChips from "./SizesChips";
 import Modals from "../Certificate-modal/Modal";
 import { useState } from "react";
 import Register from "../register-login/Register";
-import Login from "../register-login/Login ";
 
 function CoursesCardDetails() {
   const [open, setOpen] = useState(false);

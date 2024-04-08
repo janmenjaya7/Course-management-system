@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CardFoum from "./CardFoum";
 import search from "../../assets/serch-icon/search-24px.svg";
 import Modals from "../Certificate-modal/Modal";
+import AskModel from "../ask/AskModel";
 
 function CardFroumSec() {
   const [open, setOpen] = useState(false);
@@ -16,11 +17,15 @@ function CardFroumSec() {
 
   return (
     <>
-      <Modals open={open} setOpen={setOpen} />
+      <Modals
+        open={open}
+        setOpen={setOpen}
+        ModalsContent={<AskModel setOpen={setOpen} />}
+      />
       <div id="froum-contener">
         <div className="froum-input">
           <div className="serch-inputs">
-            <span className="input-serch">
+            <span className="input-search">
               <input type="text" className="inputs" />
               <img src={search} alt="search" className="serch-icon" />
             </span>
@@ -48,4 +53,3 @@ function CardFroumSec() {
 }
 
 export default CardFroumSec;
-// jdnjenf

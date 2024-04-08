@@ -1,0 +1,22 @@
+#outersection-inst {
+  background-color: #fff;
+  margin-top: 80px;
+}
+.custom-button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #1d366f;
+  color: #fff;
+  margin-top: 10px;
+}
+.already-acc {
+  text-align: center;
+  margin-top: 10px;
+}
+.heading {
+  font-size: 20px;
+}
+.instructor-registering-main {
+  margin-top: 80px;
+}

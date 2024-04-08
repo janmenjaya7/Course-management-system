@@ -11,7 +11,7 @@ import image8 from "../../assets/markus-spiske-8/markus-spiske-1LLh8k2_YFk-unspl
 import image9 from "../../assets/markus-spiske-9/markus-spiske-1LLh8k2_YFk-unsplash.png";
 export const data = [
   {
-    id: "a1",
+    id: "101",
     image: javaImg,
     heding: "Learn java programming : for absolute beginners",
     name: "janmenjaya",
@@ -21,7 +21,7 @@ export const data = [
     chip: "java",
   },
   {
-    id: "a2",
+    id: "102",
     image: image6,
     heding: "Learn java programming : for absolute beginners",
     name: "suni",
@@ -31,7 +31,7 @@ export const data = [
     chip: "Python",
   },
   {
-    id: "a3",
+    id: "103",
     image: image3,
     heding: "Learn DevOps for absolute beginners",
     name: "shafi",
@@ -41,7 +41,7 @@ export const data = [
     chip: "DevOps",
   },
   {
-    id: "a4",
+    id: "104",
     image: image4,
     heding: "Selenium Certification Training Course",
     name: "nagraj",
@@ -51,7 +51,7 @@ export const data = [
     chip: "Selenium",
   },
   {
-    id: "a5",
+    id: "105",
     image: image5,
     heding: "Learn java programming : for absolute beginners",
     name: "janmenjaya",
@@ -61,7 +61,7 @@ export const data = [
     chip: "java",
   },
   {
-    id: "a6",
+    id: "106",
     image: image7,
     heding: "Mobile App Testing Using Appium",
     name: "suni",
@@ -71,7 +71,7 @@ export const data = [
     chip: "Python",
   },
   {
-    id: "a7",
+    id: "107",
     image: image8,
     heding: "Learn java programming : for absolute beginners",
     name: "shafi",
@@ -81,7 +81,7 @@ export const data = [
     chip: "DevOps",
   },
   {
-    id: "a8",
+    id: "108",
     image: image9,
     heding: "Full Stack Web Developer Masters Course",
     name: "nagraj",
@@ -95,7 +95,7 @@ export const data = [
 function CardSection({ id }) {
   const navigate = useNavigate();
   const handelClick = () => {
-    navigate(`/courses/CoursesCardDetails/${id}`);
+    navigate(`/courses/courses-card-details/${id}`);
   };
   console.log("id are", data.id);
   return (
