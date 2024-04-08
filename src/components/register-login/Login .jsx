@@ -2,8 +2,10 @@ import React from "react";
 import Input from "../inpute/Input";
 import password from "../../assets/passwordicon/eye.svg";
 import "./login.css";
+import { useNavigate } from "react-router-dom";
 
 function Login({ heding, title }) {
+  const navigate = useNavigate();
   return (
     <div id="login-main-section">
       <div className="outersection">
@@ -22,6 +24,7 @@ function Login({ heding, title }) {
             </div>
             <button
               type="submit"
+              onClick={() => navigate("/courses")}
               className="btn custom-button"
               style={{
                 background: "#1D366F",

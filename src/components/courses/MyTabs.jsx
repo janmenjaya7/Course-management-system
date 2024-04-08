@@ -1,19 +1,16 @@
 import React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
 import "./MyTabs.css";
-import Faq from "../courses/Faq";
 import Syllabus from "../courses/Syllabus";
 import Overview from "../courses/Overview";
 import CardFroumSec from "../card-foum/CardFroumSec";
+import FaqSection from "./FaqSection";
 export default function MyTabs() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
-    // console.log(newValue);
     setValue(newValue);
-    // navigate(newValue);
   };
 
   return (
@@ -27,7 +24,7 @@ export default function MyTabs() {
         </Tabs>
       </div>
       {value === 3 ? (
-        <Faq />
+        <FaqSection />
       ) : value === 2 ? (
         <CardFroumSec />
       ) : value === 1 ? (
