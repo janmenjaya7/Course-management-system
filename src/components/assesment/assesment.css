@@ -1,0 +1,61 @@
+.assesment-outersection{
+    /* border: 1px solid red; */
+    border: 1px solid #DCDCDC;
+width: 966px;
+height: 648px;
+margin: auto;
+border-radius: 10px;
+}
+.assentment-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .assentment-icon>p{
+    font: normal normal 600 16px/30px Open Sans;
+    color: #252D41;
+
+  }
+  .assesment-innerBorder{
+    border: 1px solid #707070;
+    opacity: 0.1;
+  }
+  .assesment-inputBox {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px;
+   
+  }
+  
+  .assesment-inputBox label {
+    margin-bottom: 5px; 
+    align-self: flex-start;
+   
+  }
+  
+  .assesment-inputBox input[type="text"] {
+    width: 917px;
+    padding: 8px; 
+    border: 1px solid #D8D8D8;
+    border-radius: 4px; 
+   
+  }
+
+
+.assesment-inputBox input[type="text"]:focus {
+    outline: none;
+    box-shadow: none !important; 
+    /* border: 1px solid #D8D8D8;  */
+  }
+  .MultipleSelect{
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .MultipleSelect p{
+    margin: 0;
+  }
+  
+  

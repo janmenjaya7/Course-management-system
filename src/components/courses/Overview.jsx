@@ -139,7 +139,6 @@ function Overview() {
         </div>
         <div className="masterName">
           <p>
-            {" "}
             <b>Dev kanda</b>
           </p>
         </div>

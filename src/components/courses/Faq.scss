@@ -1,7 +1,8 @@
 .accordionFaq {
-  // margin-top: 100px;
-  border: 1 px solid red;
-  margin: 80px 100px;
+  padding: 0 100px;
   font-family: "Open Sans";
   background: #fff;
+  .accordion-inner-section {
+    padding: 20px;
+  }
 }

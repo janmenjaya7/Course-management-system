@@ -85,11 +85,11 @@ const Register = ({ heading, title }) => {
   };
 
   return (
-    <div>
+    <div id="register-main-section">
       <div className="outersection">
-        <div className="container container-box">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <h1 className="heading">{heading}</h1>
+        <div className="container-box">
+          <form onSubmit="#">
+            <h1 className="heading">{heding}</h1>
             <h4 className="Register-Now">{title}</h4>
             <Input
               type={'text'}
@@ -132,9 +132,9 @@ const Register = ({ heading, title }) => {
           </form>
         </div>
       </div>
-      <h5 className="login-link">
+      <div className="login-link">
         Already have an account? <span>Login</span>
-      </h5>
+      </div>
     </div>
   );
 };

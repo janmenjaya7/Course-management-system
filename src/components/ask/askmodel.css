@@ -1,0 +1,64 @@
+.icon-section{
+    display: flex;
+    justify-content: space-between;
+
+}
+.ask-outersection{
+    margin-top: 100px;
+}
+.ask-border{
+    border: 1px solid #D8D8D8;
+   
+width: 100%;
+}
+.inner-box{
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+
+    height: 148px;
+}
+.Your-Question{
+    margin-top: 10px;
+}
+.ComboBox{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+/* .border-bottom{
+    border: 1px solid #D8D8D8;
+    margin-top: 70px;
+    width: 100%; 
+} */
+
+.Askmodel-outersection {
+    width: 100%; 
+    background-color:#FFFFFF;
+    padding: 20px;
+    width: 966px;
+height: 568px;
+   
+}
+
+.border-bottom {
+    border: 1px solid #D8D8D8;
+    margin-top: 70px;
+    width: 100%; 
+   
+}
+
+
+.Submit-Question{
+    background-color:  #1D366F;
+    height: 40px;
+    width: 154px;
+    opacity: 1;
+    color: white;
+    border-radius: 4px;
+    margin-top: 5px;
+
+}
+.bottom-border{
+    display: flex;
+    justify-content: end;
+}
