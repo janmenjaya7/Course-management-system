@@ -1,12 +1,13 @@
 import React from "react";
 import Input from "../inpute/Input";
 import password from "../../assets/passwordicon/eye.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "./instructor.css";
 const InstructorLogin = ({ heading, title }) => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="outersection">
+      <div id="outersection-inst">
         <div className="container container-box">
           <form>
             <h1 className="heading">{heading}</h1>
@@ -19,12 +20,7 @@ const InstructorLogin = ({ heading, title }) => {
             <button
               onClick={() => navigate("/instructor/myCourse")}
               type="submit"
-              className="btn custom-button"
-              style={{
-                backgroundColor: "#1D366F",
-                background: "#1D366F 0% 0% no-repeat padding-box",
-                color: "#FFFFFF",
-              }}
+              className="custom-button"
             >
               Register
             </button>
@@ -32,12 +28,12 @@ const InstructorLogin = ({ heading, title }) => {
               By continuing, you agree to our <span>Terms of Use</span> and
               <span>Privacy policies</span>
             </p>
+            <div className="already-acc">
+              Already have an account? <Link to={"/instructor/login"}>Login</Link>
+            </div>
           </form>
         </div>
       </div>
-      <h5 className="login-link">
-        Already have an account? <span>Login</span>
-      </h5>
     </div>
   );
 };

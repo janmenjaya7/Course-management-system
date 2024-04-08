@@ -9,9 +9,6 @@ function FaqSection() {
         <Faq />
         <Faq />
         <Faq />
-        <Faq />
-        <Faq />
-        <Faq />
       </div>
     </>
   );

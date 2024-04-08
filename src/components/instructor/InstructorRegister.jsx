@@ -7,7 +7,7 @@ const InstructorRegister = ({ heding, title }) => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="outersection">
+      <div className="instructor-registering-main">
         <div className="container container-box">
           <form onSubmit="#">
             <h1 className="heading">{heding}</h1>

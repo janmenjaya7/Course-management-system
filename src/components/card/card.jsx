@@ -4,11 +4,11 @@ import logo from "../../assets/Group-icon/Group 63691.png";
 import clock from "../../assets/logo/clock.svg";
 import Chip from "@mui/material/Chip";
 
-function Card({ name, day, Assignments, time, image, chip, heding }) {
+function Card({ name, day, Assignments, time, image, chip, heding, onClick }) {
   return (
     <>
       {/* <Navbar /> */}
-      <div className="card">
+      <div className="card" onClick={onClick}>
         <div className="img-sec">
           <img src={image} alt="imgSpaiske" />
           <div className="chip-text">

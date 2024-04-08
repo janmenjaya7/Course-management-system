@@ -1,5 +1,5 @@
 #froum-contener {
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .main-froum {
   display: flex;
@@ -8,7 +8,6 @@
   padding: 0 100px;
 }
 .card-froum {
-  /* height: 147px; */
   background: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 5px;
@@ -45,7 +44,7 @@
   justify-content: space-between;
   padding: 20px 100px;
 }
-.input-serch {
+.input-search {
   position: relative;
 }
 .serch-icon {
@@ -60,6 +59,8 @@
   background: #fcfcfc;
   border: 1px solid #c9c9c9;
   border-radius: 10px;
+  outline: none;
+  padding: 10px;
 }
 .btn-course {
   padding: 0 50px;
