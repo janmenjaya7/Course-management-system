@@ -1,6 +1,6 @@
 import React from 'react'
 // reusable component
-const Input = ({type,label,placeholder}) => {
+const Input = ({type,label,placeholder,handleChange,value}) => {
   return (
     <>
     <div>
@@ -17,7 +17,7 @@ const Input = ({type,label,placeholder}) => {
           className="form-control shadow-none"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
-        />
+         onChange={handleChange} value={value}/>
       </div>
     </div>
   </>
