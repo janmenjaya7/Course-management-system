@@ -7,8 +7,8 @@ import { useNavigate, useLocation, Link } from "react-router-dom";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import instractor from "../../assets/logo/iNSTRUCTOR.svg";
-import CardSection from "../card/CardSection";
-import Faq from "../courses/Faq";
+// import CardSection from "../card/CardSection";
+// import Faq from "../courses/Faq";
 
 function Navbar() {
   const [value, setValue] = useState(0);

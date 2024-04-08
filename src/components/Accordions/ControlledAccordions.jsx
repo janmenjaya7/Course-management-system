@@ -18,7 +18,7 @@ function ControlledAccordions() {
     <>
       <Accordion
         sx={{
-          marginBottom: '20px',
+          marginBottom: '5px',
           borderRadius: '5px 5px 1px 1px',
         }}
         expanded={expanded === 'panel1'}

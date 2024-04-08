@@ -1,7 +1,7 @@
 import React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 import "./MyTabs.css";
 import Faq from "../courses/Faq";
 import Syllabus from "../courses/Syllabus";
