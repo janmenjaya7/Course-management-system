@@ -61,7 +61,7 @@ function AddBasicDetails() {
                   <VisuallyHiddenInput type="file" />
                 </Button>
                 <div>
-                  <span>Drag files here or</span>
+                  <p>Drag files here or</p>
                   <Link to={"#"}>Browse</Link>
                 </div>
               </div>

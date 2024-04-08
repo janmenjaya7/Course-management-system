@@ -13,10 +13,10 @@ import InstructorLogin from "../components/instructor/InstructorLogin";
 import InstractorMyCourse from "../components/instractor-sections/InstractorMyCourse";
 import TopNavbar from "../components/Add-course-froms/TopNavbar";
 import CoursesCardDetails from "../components/courses/CoursesCardDetails";
-import Syllabus from "../components/courses/Syllabus";
-import Overview from "../components/courses/Overview";
 import CardFroumSec from "../components/card-foum/CardFroumSec";
 import FaqSection from "../components/courses/FaqSection";
+import Dashboard from "../components/dashboard/Dashboard";
+import DashboardCard from "../components/dashboard/DashboardCard";
 function Router({ id }) {
   const location = useLocation();
   return (
@@ -25,14 +25,15 @@ function Router({ id }) {
       <Routes>
         <Route path="/" element={<LandingPages />} />
         <Route path="/courses" element={<CardSection />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/foum" element={<CardFroumSec />} />
         <Route path="/faq" element={<FaqSection />} />
-        <Route path="/Syllabus" element={<Syllabus />} />
-        <Route path="/Overview" element={<Overview />} />
-        <Route path="/Forum" element={<CardFroumSec />} />
+        {/* <Route path="/Overview" element={<Overview />} /> */}
         <Route
-          path={`/courses/CoursesCardDetails/${id}`}
+          path={`/courses/courses-card-details/${id}`}
           element={<CoursesCardDetails />}
         />
+        <Route path={`/dashboard-card-details`} element={<DashboardCard />} />
         <Route
           path="/Register"
           element={<Register heading="Start learning" title="Register Now" />}
@@ -57,7 +58,7 @@ function Router({ id }) {
           path="/card/register"
           element={<Register heading="Start learning" title="Register Now" />}
         />
-        <Route
+        {/* <Route
           path="/instructor"
           element={
             <InstructorRegister
@@ -65,12 +66,12 @@ function Router({ id }) {
               title="Register as Instructor"
             />
           }
-        />
+        /> */}
         <Route
-          path="/instructor"
+          path="/instructor/register"
           element={
             <InstructorRegister
-              heding="Start teaching on e2eHiring"
+              // heding="Start teaching on e2eHiring"
               title="Register as Instructor"
             />
           }
@@ -81,6 +82,7 @@ function Router({ id }) {
             <InstructorLogin heding="Welcome back" title="Instructor Login" />
           }
         />
+
         <Route path="/instructor/myCourse" element={<InstractorMyCourse />} />
         <Route path="/instructor/myCourse/addCourses" element={<TopNavbar />} />
         <Route path="*" element={<Error />} />

@@ -1,29 +1,21 @@
+import React from "react";
+import ComboBox from "./ComboBox";
+import "./askmodel.css";
+import ClearIcon from "@mui/icons-material/Clear";
 
-import React, { useState } from 'react';
-import ComboBox from './ComboBox';
-import './askmodel.css';
-
-function AskModel({ handleClose }) {
-  const [close, setClose] = useState(true);
-
-  const handleCloseModal = () => {
-    setClose(false);
-    handleClose(); 
-  };
-
+function AskModel({ setOpen }) {
   return (
     <>
-      <div className='Askmodel-outersection'>
-        <div className='icon-section'>
-          <p>Ask a question</p>
-          <i className="fa-solid fa-x" onClick={handleCloseModal}></i>
+      <div className="Askmodel-outersection">
+        <div className="icon-section">
+          <p style={{ marginBottom: "10px" }}>Ask a question</p>
+          <ClearIcon onClick={() => setOpen(false)} />
         </div>
-        <div className='ask-border'></div>
         <div>
-          <p className='Your-Question'>Your Question</p>
-          <div className='inner-box'></div>
+          <div className="Your-Question">Your Question</div>
+          <textarea className="inner-box" placeholder="Add tsks"></textarea>
         </div>
-        <div className='ComboBox'>
+        <div className="ComboBox">
           <div>
             <span>Select Course</span>
             <ComboBox label="Select Course" />
@@ -33,9 +25,8 @@ function AskModel({ handleClose }) {
             <ComboBox label="Select Topic" />
           </div>
         </div>
-        <div className='border-bottom'></div>
-        <div className='bottom-border'>
-          <button className='Submit-Question'>Submit Question</button>
+        <div className="bottom-border">
+          <button className="Submit-Question">Submit question</button>
         </div>
       </div>
     </>

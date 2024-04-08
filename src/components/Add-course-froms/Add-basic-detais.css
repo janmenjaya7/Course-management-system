@@ -3,6 +3,9 @@
   padding: 0 255px;
   margin: 10px 0;
 }
+#basic-details p {
+  margin: 10px 0;
+}
 .top-navsec {
   margin-top: 80px;
 }

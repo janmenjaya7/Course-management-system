@@ -15,8 +15,11 @@ function LandingPages() {
           </div>
           <div className="text-section">
             <div className=" text-center">
-              <h3>For bootcamp usecase</h3>
-              <div className="heding-landing">Wireframes on Course web app</div>
+              <h3>Join our coding bootcamp today!</h3>
+              <div className="heding-landing">
+                Launch your career with e2e
+                <span style={{ color: "red", fontWeight: "800" }}>H</span>iring
+              </div>
             </div>
           </div>
           <div className="btn-landing ">
@@ -31,7 +34,7 @@ function LandingPages() {
             </button>
             <button
               className="btn-instructor"
-              onClick={() => navigate("/instructor")}
+              onClick={() => navigate("/instructor/register")}
             >
               Instructor Module
             </button>
