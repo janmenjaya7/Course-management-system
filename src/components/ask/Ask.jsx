@@ -23,11 +23,7 @@ const Ask = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    // width: 666,
-    // height: 568,
-    // bgcolor: "background.paper",
     borderRadius: 5,
-    // border: '2px solid #000',
     boxShadow: 30,
      
   };

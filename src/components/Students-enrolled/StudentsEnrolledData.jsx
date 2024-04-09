@@ -10,6 +10,7 @@ import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
+import StudentsEnrolled from "./StudentsEnrolled";
 
 function createData(name, calories, fat, carbs, protein, action) {
   return { name, calories, fat, carbs, protein, action };
@@ -68,6 +69,7 @@ const rows = [
 function StudentsEnrolledData() {
   return (
     <>
+      <StudentsEnrolled />
       <div id="StudentsEnrolledData">
         <div className="table-heder-section">
           <h5 style={{ margin: "15px 0" }}>2354 Students enrolled</h5>

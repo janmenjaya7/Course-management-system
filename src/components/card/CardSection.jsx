@@ -18,7 +18,7 @@ export const data = [
     day: "10",
     Assignments: "22",
     time: "5",
-    chip: "java",
+    chip: "Java",
   },
   {
     id: "102",
@@ -58,7 +58,7 @@ export const data = [
     day: "10",
     Assignments: "22",
     time: "5",
-    chip: "java",
+    chip: "Java",
   },
   {
     id: "106",

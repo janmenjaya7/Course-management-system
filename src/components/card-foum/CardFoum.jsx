@@ -12,16 +12,16 @@ function CardFoum({ time, course, topic, answer }) {
           <div className="froum-sec">
             <span>Asked by Janmenjaya </span>
             <div>
-              <span className="froum-logo-section" id="logo">
-                <img src={clock} alt="clock" />
-                {time} days
-              </span>
+              <div className="froum-logo-section" id="logo">
+                <img src={clock} alt="clock" style={{ marginRight: "5px" }} />
+                <span>{time} days</span>
+              </div>
             </div>
           </div>
           <div>
             <div className="from-text-sec">
               <div className="froum-box"></div>
-              <span>
+              <span className="from-box-text">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua. At vero eos et accusam et
@@ -36,17 +36,17 @@ function CardFoum({ time, course, topic, answer }) {
                 />
                 <Chip label={"Topic : Topic 1"} />
               </div>
-              <div>
+              <div className="logo-answer">
                 <span
                   className="froum-logo-section"
                   id="logo"
                   style={{ marginRight: "5px" }}
                 >
-                  <img src={clock} alt="clock" />
+                  <img src={clock} alt="clock" style={{ marginRight: "5px" }} />
                   {time} days
                 </span>
                 <span className="check-icon">
-                  <CheckCircleOutlineIcon style={{ marginRight: "5px" }} />
+                  <CheckCircleOutlineIcon style={{ marginRight: "0 10px" }} />
                   {answer}
                 </span>
               </div>

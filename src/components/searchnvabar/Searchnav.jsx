@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./searchnav.css";
+import { Link } from "react-router-dom";
 const Searchnav = () => {
   return (
     <div>
@@ -30,7 +31,7 @@ const Searchnav = () => {
                 Something else here
               </a>
             </li>
-    
+
             <li>
               <a class="dropdown-item" href="#">
                 Separated link
@@ -45,18 +46,35 @@ const Searchnav = () => {
         </div>
         <div>
           {/* second dropdown */}
-        <div class="dropdown">
-  <a className="btn  dropdown-toggle dropdown-second" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    
-   Dropdown link
-  </a>
-  
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
+          <div class="dropdown">
+            <Link
+              className="btn  dropdown-toggle dropdown-second"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </Link>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  Action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Another action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
