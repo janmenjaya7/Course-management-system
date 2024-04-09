@@ -17,10 +17,8 @@ const VisuallyHiddenInput = styled("input")({
   width: 1,
 });
 function AddBasicDetails() {
-  //   console.log(add);
   return (
     <>
-      {/* <TopNavbar /> */}
       <div className="add-corses-section">
         <div id="basic-details">
           <div className="input-sec">
@@ -53,15 +51,12 @@ function AddBasicDetails() {
               <div className="img-inside">
                 <Button
                   component="label"
-                  role={undefined}
-                  variant="text"
-                  tabIndex={-1}
                   startIcon={<img src={imgss} alt="uplode" />}
                 >
                   <VisuallyHiddenInput type="file" />
                 </Button>
-                <div>
-                  <p>Drag files here or</p>
+                <div style={{ display: "flex" }}>
+                  <div>Drag files here or</div>
                   <Link to={"#"}>Browse</Link>
                 </div>
               </div>

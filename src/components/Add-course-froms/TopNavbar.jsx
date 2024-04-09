@@ -41,7 +41,7 @@ function TopNavbar() {
     <>
       <div className="top-navsec">
         <div className="course-nav-content">
-          <h3>Add Course</h3>
+          <div className="heding-add-course">Add Course</div>
           <div>
             <Box
               sx={{
@@ -75,6 +75,7 @@ function TopNavbar() {
               onClick={handelClick}
               variant="contained"
               style={{ margin: "0 10px" }}
+              disabled={activeStep === 3}
             >
               {activeStep === steps.length - 1 ? "Submit" : "Next"}
             </Button>

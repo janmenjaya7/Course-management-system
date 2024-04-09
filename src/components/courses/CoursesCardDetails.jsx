@@ -49,7 +49,7 @@ function CoursesCardDetails() {
           </div>
 
           <div className="primaryDiv2">
-            <img src={javaImg} alt="" />
+            <img src={javaImg} alt="img" />
           </div>
         </div>
         <div className="tabNav">
