@@ -1,5 +1,5 @@
 import React from "react";
-import "../LandingPage/landingPages.css";
+import "./landingPages.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../../assets/logo/Group.svg";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ function LandingPages() {
   return (
     <>
       <div id="main-section">
-        <div className="cards">
+        <div className="card" style={{ border: "none" }}>
           <div className="logos">
             <img src={image} alt="logo" height={"71px"} width={"209px"} />
           </div>
