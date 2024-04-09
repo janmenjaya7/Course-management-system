@@ -27,13 +27,12 @@ function Navbar() {
     );
   };
   const { pathname } = useLocation();
-  // console.log(pathname);
 
   return (
     <>
       <div className="navbar-sections">
         <Link to="/">
-          <img src={logo} alt="somlog" />
+          <img src={logo} alt="somlog" height="55px" />
           {pathname.startsWith("/instructor") ? (
             <img src={instractor} alt="instractor" />
           ) : null}
@@ -78,7 +77,6 @@ function Navbar() {
                 Register now
               </button>
             </div>
-            {/* </div> */}
           </>
         ) : null}
       </div>
