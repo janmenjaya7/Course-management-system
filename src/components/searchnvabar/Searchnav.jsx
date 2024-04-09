@@ -212,8 +212,6 @@ const Searchnav = () => {
             style={{
               borderRadius: '10px 10px',
               paddingLeft: '25px',
-              // paddingBottom: '13px',
-              // paddingTop: '2px',
               backgroundColor: '#FFFFFF',
               border: '1px solid #C9C9C9 ',
               fontFamily: 'Open Sans',
