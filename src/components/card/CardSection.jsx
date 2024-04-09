@@ -9,6 +9,7 @@ import image5 from "../../assets/markus-spiske-5/markus-spiske-1LLh8k2_YFk-unspl
 import image7 from "../../assets/markus-spiske-7/markus-spiske-1LLh8k2_YFk-unsplash.png";
 import image8 from "../../assets/markus-spiske-8/markus-spiske-1LLh8k2_YFk-unsplash.png";
 import image9 from "../../assets/markus-spiske-9/markus-spiske-1LLh8k2_YFk-unsplash.png";
+import Searchnav from "../searchnvabar/Searchnav";
 export const data = [
   {
     id: "101",
@@ -97,9 +98,10 @@ function CardSection({ id }) {
   const handelClick = () => {
     navigate(`/courses/courses-card-details/${id}`);
   };
-  console.log("id are", data.id);
+
   return (
     <>
+      <Searchnav />
       <div className="app-section">
         {data.map((item) => (
           <div key={item.id} onClick={handelClick}>

@@ -3,6 +3,7 @@ import "./card.css";
 import logo from "../../assets/Group-icon/Group 63691.png";
 import clock from "../../assets/logo/clock.svg";
 
+
 function Card({ name, day, Assignments, time, image, chip, heding, onClick }) {
   return (
     <>
