@@ -9,12 +9,13 @@ import image5 from "../../assets/markus-spiske-5/markus-spiske-1LLh8k2_YFk-unspl
 import image7 from "../../assets/markus-spiske-7/markus-spiske-1LLh8k2_YFk-unsplash.png";
 import image8 from "../../assets/markus-spiske-8/markus-spiske-1LLh8k2_YFk-unsplash.png";
 import image9 from "../../assets/markus-spiske-9/markus-spiske-1LLh8k2_YFk-unsplash.png";
+import Searchnav from "../searchnvabar/Searchnav";
 export const data = [
   {
     id: "101",
     image: javaImg,
     heding: "Learn java programming : for absolute beginners",
-    name: "janmenjaya",
+    name: "Janmenjaya",
     day: "10",
     Assignments: "22",
     time: "5",
@@ -24,7 +25,7 @@ export const data = [
     id: "102",
     image: image6,
     heding: "Learn java programming : for absolute beginners",
-    name: "suni",
+    name: "Suni",
     day: "10",
     Assignments: "22",
     time: "5",
@@ -34,7 +35,7 @@ export const data = [
     id: "103",
     image: image3,
     heding: "Learn DevOps for absolute beginners",
-    name: "shafi",
+    name: "Shafi",
     day: "10",
     Assignments: "22",
     time: "5",
@@ -44,7 +45,7 @@ export const data = [
     id: "104",
     image: image4,
     heding: "Selenium Certification Training Course",
-    name: "nagraj",
+    name: "Nagraj",
     day: "10",
     Assignments: "22",
     time: "5",
@@ -54,7 +55,7 @@ export const data = [
     id: "105",
     image: image5,
     heding: "Learn java programming : for absolute beginners",
-    name: "janmenjaya",
+    name: "Monick",
     day: "10",
     Assignments: "22",
     time: "5",
@@ -64,7 +65,7 @@ export const data = [
     id: "106",
     image: image7,
     heding: "Mobile App Testing Using Appium",
-    name: "suni",
+    name: "Navnet",
     day: "10",
     Assignments: "22",
     time: "5",
@@ -74,7 +75,7 @@ export const data = [
     id: "107",
     image: image8,
     heding: "Learn java programming : for absolute beginners",
-    name: "shafi",
+    name: "Ali",
     day: "10",
     Assignments: "22",
     time: "5",
@@ -84,7 +85,7 @@ export const data = [
     id: "108",
     image: image9,
     heding: "Full Stack Web Developer Masters Course",
-    name: "nagraj",
+    name: "Ankit",
     day: "10",
     Assignments: "22",
     time: "5",
@@ -97,9 +98,10 @@ function CardSection({ id }) {
   const handelClick = () => {
     navigate(`/courses/courses-card-details/${id}`);
   };
-  console.log("id are", data.id);
+
   return (
     <>
+      <Searchnav />
       <div className="app-section">
         {data.map((item) => (
           <div key={item.id} onClick={handelClick}>

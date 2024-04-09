@@ -26,9 +26,9 @@ function AddSyllabus() {
           />
           <DeleteIcon style={{ margin: "0 10px", color: "#999" }} />
         </div>
-        <p className="add-assessment" onClick={() => setOpen(true)}>
+        <div className="add-assessment" onClick={() => setOpen(true)}>
           <AddIcon /> Add Assessment
-        </p>
+        </div>
       </div>
     </>
   );

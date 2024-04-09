@@ -9,7 +9,6 @@ import Navbar from "../components/Navbar/Navbar";
 import { useLocation } from "react-router-dom";
 import InstructorRegister from "../components/instructor/InstructorRegister";
 import InstructorLogin from "../components/instructor/InstructorLogin";
-// import AddCources from "../components/Add-cources/AddCources";
 import InstractorMyCourse from "../components/instractor-sections/InstractorMyCourse";
 import TopNavbar from "../components/Add-course-froms/TopNavbar";
 import CoursesCardDetails from "../components/courses/CoursesCardDetails";
@@ -17,6 +16,8 @@ import CardFroumSec from "../components/card-foum/CardFroumSec";
 import FaqSection from "../components/courses/FaqSection";
 import Dashboard from "../components/dashboard/Dashboard";
 import DashboardCard from "../components/dashboard/DashboardCard";
+import AddCources from "../components/Add-cources/AddCources";
+import StudentsEnrolledData from "../components/Students-enrolled/StudentsEnrolledData";
 function Router({ id }) {
   const location = useLocation();
   return (
@@ -62,15 +63,7 @@ function Router({ id }) {
           path="/card/register"
           element={<Register heading="Start learning" title="Register Now" />}
         />
-        {/* <Route
-          path="/instructor"
-          element={
-            <InstructorRegister
-              heding="Start teaching on e2eHiring"
-              title="Register as Instructor"
-            />
-          }
-        /> */}
+
         <Route
           path="/instructor/register"
           element={
@@ -89,6 +82,14 @@ function Router({ id }) {
 
         <Route path="/instructor/myCourse" element={<InstractorMyCourse />} />
         <Route path="/instructor/myCourse/addCourses" element={<TopNavbar />} />
+        <Route
+          path="/instructor/myCourse/addCourses/course-progress"
+          element={<AddCources />}
+        />
+        <Route
+          path="/instructor/myCourse/addCourses/course-progress/student-data"
+          element={<StudentsEnrolledData />}
+        />
         <Route path="*" element={<Error />} />
       </Routes>
     </>
