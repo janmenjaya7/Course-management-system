@@ -19,23 +19,16 @@ const Ask = () => {
 
   const style = {
     position: "absolute",
-    
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    borderRadius: 5,
-    boxShadow: 30,
-     
   };
-
   return (
     <div className="ask-outersection">
       <Button onClick={handleOpen}>Open modal</Button>
       <Modal open={open} onClose={handleClose}>
         <Box sx={style}>
           <AskModel handleClose={handleClose} />
-          {/* <ViewQuestion handleClose={handleClose} /> */}
-          {/* <SubmitAssignment /> */}
         </Box>
       </Modal>
     </div>

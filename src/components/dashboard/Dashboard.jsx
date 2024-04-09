@@ -61,18 +61,6 @@ const Dashboard = () => {
               heding={data[1].heding}
               onClick={handleClick}
             />
-
-            {/* <Card
-              heading="Learn DevOps for absolute beginners"
-              image={image3}
-              name="by Misha Randhawa"
-              day="2"
-              Assignments="22"
-              time=" 4"
-              chip="Devops"
-              key="2"
-              onClick={() => navigat(`/dashboard/dashboard-card-details`)}
-            /> */}
           </div>
         </div>
       </div>

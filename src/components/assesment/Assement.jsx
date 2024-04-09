@@ -6,10 +6,10 @@ import "react-quill/dist/quill.snow.css";
 import ClearIcon from "@mui/icons-material/Clear";
 const Assement = ({ setOpen }) => {
   return (
-    <div>
-      <div className="assesment-outersection">
+    <div className="assesment-outersection">
+      <div className="assesment-innersection">
         <div className="assentment-icon">
-          <p>Assessment 1</p>
+          <div className="assentment-text">Assessment 1</div>
           <ClearIcon
             onClick={() => setOpen(false)}
             style={{ cursor: "pointer" }}
@@ -17,18 +17,25 @@ const Assement = ({ setOpen }) => {
         </div>
         <div className="assesment-innerBorder"></div>
         <div className="assesment-inputBox">
-          <label htmlFor="">Title</label>
+          <div className="assesment-title">Title</div>
           <input type="text" placeholder="Enter assessment 1 title" />
         </div>
         <div className="MultipleSelect">
-          <p>Time Duration (in days)</p>
+          <div className="assesment-time">Time Duration (in days)</div>
           <BootstrapDrop />
         </div>
-        <ReactQuill
-          theme="snow"
-          placeholder="Enter complete course description"
-          style={{ height: "250px", borderRadius: "20px" }}
-        ></ReactQuill>
+        <div className="text-area-field">
+          <span className="text-desc">Description</span>
+          <ReactQuill
+            theme="snow"
+            placeholder="Enter assesstment 1 description"
+            style={{ height: "200px" }}
+          ></ReactQuill>
+        </div>
+        <div className="btn-sectons">
+          <button className="btn-cancel">Cancel</button>
+          <button className="btn-submit">Submit</button>
+        </div>
       </div>
     </div>
   );
