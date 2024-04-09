@@ -57,6 +57,14 @@
   left: 15%;
   transform: translate(-50%, -50%);
 }
+.chip-content {
+  padding: 4px 10px;
+  font-size: 13px;
+  background: #d2e4e4;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
 .app-section {
   margin-top: 80px;
   display: flex;

@@ -32,12 +32,7 @@ const Register = ({ heding, title }) => {
             <button
               onClick={() => navigate("/student/login")}
               type="submit"
-              className="btn custom-button"
-              style={{
-                backgroundColor: "#1D366F",
-                background: "#1D366F 0% 0% no-repeat padding-box",
-                color: "#FFFFFF",
-              }}
+              className="custom-button"
             >
               Register
             </button>

@@ -1,24 +1,18 @@
-
-import React, { useState } from "react";
+import React from "react";
 import "./viewquestion.css";
 import clock from "../../assets/logo/clock.svg";
+import ClearIcon from "@mui/icons-material/Clear";
 
-const ViewQuestion = ({handleClose}) => {
-
-
-const handleClick=()=>{
-   
-    handleClose()
-}
+const ViewQuestion = ({ setOpenQus }) => {
   return (
     <div className="view-section">
-       
       <div className="view-aquestion-icon">
         <div>Ask a question</div>
-        <i className="fa-solid fa-x" onClick={handleClick}></i>
+        <ClearIcon
+          onClick={() => setOpenQus(false)}
+          style={{ cursor: "pointer" }}
+        />
       </div>
-      <div className="section-border"></div>
-
       <div className="asked-by-rahul">
         <p>Asked by Rahul</p>
         <img src={clock} alt="" />
@@ -31,13 +25,13 @@ const handleClick=()=>{
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren
         </p>
-        <div className="View-topic">
-          <p>Topic: Topic1</p>
-        </div>
+      </div>
+      <div className="View-topic">
+        <p>Topic: Topic1</p>
       </div>
 
       <div className="para-section">
-        <p>To be answered</p>
+        <div>To be answered</div>
       </div>
       <div className="btn-cont">
         <button className="view-btn">Don</button>

@@ -16,8 +16,7 @@
 }
 .container-box {
   width: 450px !important;
-  height: 430px !important;
-  /* background-color: #3b0303; */
+  height: 440px !important;
   border: 1px solid #eeeeee;
   border-radius: 10px;
   opacity: 1;
@@ -26,9 +25,7 @@
 }
 .heading {
   color: #1d366f;
-
   text-align: center;
-  opacity: 1;
   margin-top: 5px;
 }
 .Register-Now {
@@ -45,39 +42,29 @@
 
 .paragraph > span {
   color: #243386;
-
-  letter-spacing: 0px;
+  font-weight: 600px;
 }
-
 .paragraph {
   color: #262626;
-  font-size: 14px;
-  /* font: normal normal normal 14px/19px Open Sans; */
+  font-size: 13px;
   text-align: center;
   margin-top: 10px;
+  font-weight: 600;
 }
-
 .login-link {
-  /* margin-top: 26px; */
   font-size: 14px;
-  color: #555;
+  color: #999999;
   text-align: center;
   cursor: pointer;
+  font-weight: 600;
 }
-
 .login-link:hover > span {
   text-decoration: underline;
-  color: #666666;
+  color: #868585;
 }
-
-.password-section {
-  position: relative;
-}
-
 .password-input {
   position: relative;
 }
-
 .img-section {
   position: absolute;
   top: 70%;
@@ -90,7 +77,6 @@
 
 }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
 body {
   font-family: "Open Sans", sans-serif;
 }

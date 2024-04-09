@@ -35,11 +35,15 @@ function Router({ id }) {
         />
         <Route path={`/dashboard-card-details`} element={<DashboardCard />} />
         <Route
-          path="/Register"
+          path="/register"
           element={<Register heading="Start learning" title="Register Now" />}
         />
         <Route
-          path="/login/"
+          path="/login"
+          element={<Login heading="Welcome back" title="Login" />}
+        />
+        <Route
+          path="/register/login"
           element={<Login heading="Welcome back" title="Login" />}
         />
         <Route

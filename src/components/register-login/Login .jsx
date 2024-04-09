@@ -25,11 +25,7 @@ function Login({ heding, title }) {
             <button
               type="submit"
               onClick={() => navigate("/courses")}
-              className="btn custom-button"
-              style={{
-                background: "#1D366F",
-                color: "#FFFFFF",
-              }}
+              className="custom-button"
             >
               Login
             </button>
