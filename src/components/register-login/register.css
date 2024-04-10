@@ -11,32 +11,31 @@
 }
 #register-main-section {
   margin-top: 80px;
-  background-color: #fff;
-  border-radius: 10px;
 }
 .container-box {
   width: 450px !important;
-<<<<<<< HEAD
   height: 470px !important;
   background: #ffffff;
-=======
-  height: 430px !important;
-  /* background-color: #3b0303; */
->>>>>>> b5205e8f7a8b9ca07eddd5b3f8c0de97f1479de3
   border: 1px solid #eeeeee;
   border-radius: 10px;
   opacity: 1;
   padding: 30px !important;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  margin-top: 70px;
+  /* box-sizing: border-box; */
 }
 .heading {
   color: #1d366f;
-
+  /* font: normal normal bold 32px/43px Open Sans; */
+  font-family: Open Sans;
+  font-size: 36px;
   text-align: center;
-  opacity: 1;
   margin-top: 5px;
 }
 .Register-Now {
+  
+  font-family: Open Sans;
+  font-size: 20px;
   text-align: center;
   color: #666666;
   letter-spacing: 0px;
@@ -50,39 +49,35 @@
 
 .paragraph > span {
   color: #243386;
-
+  /* font: normal normal 600 14px/19px Open Sans; */
+  font-family: Open Sans;
+  font-size: 15px;
   letter-spacing: 0px;
 }
-
 .paragraph {
   color: #262626;
-  font-size: 14px;
   /* font: normal normal normal 14px/19px Open Sans; */
+  font-family: Open Sans;
+  font-size: 16px;
   text-align: center;
   margin-top: 10px;
+  font-weight: 600;
 }
-
 .login-link {
   /* margin-top: 26px; */
-  font-size: 14px;
+  font-size: 16px;
   color: #555;
   text-align: center;
   cursor: pointer;
+  font-weight: 600;
 }
-
 .login-link:hover > span {
   text-decoration: underline;
-  color: #666666;
+  color: #868585;
 }
-
-.password-section {
-  position: relative;
-}
-
 .password-input {
   position: relative;
 }
-
 .img-section {
   position: absolute;
   top: 70%;
@@ -92,20 +87,39 @@
 
 
 .nameEroor{
-  color: red;
+  color: rgba(255, 0, 0, 0.625);
   margin: 0;
-
+  font-family: Open Sans;
+  font-size: 14px;
+  /* line-height: 0px; */
+  margin-top: -15px;
 }
-.emailError {
-  margin: 0;
-  color: red;
-}
-.passwordEroor{
+.emailError{
   /* margin: 0; */
-  color: red;
+  color: rgba(255, 0, 0, 0.625);
+  font-family: Open Sans;
+  font-size: 14px;
+  margin-top: -15px;
+ 
 }
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.passwordError{
+  margin: 0;
+  color: rgba(255, 0, 0, 0.625);
+  font-family: Open Sans;
+  font-size: 14px;
+  margin-top: -15px;
+}
+.inner-input{
+  height: 90px;
+}
 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   font-family: "Open Sans", sans-serif;
 }
+.error-message {
+  color: red;
+}
+

@@ -2,19 +2,24 @@ import React from "react";
 import "./continuelearning.css";
 import CustomSeparator from "./CustomSeparator";
 import CircleIcon from "@mui/icons-material/Circle";
-const ContinueLearning = () => {
+const ContinueLearning = ({ text, bcg, iconColor }) => {
+  console.log("this is icons color", iconColor);
   return (
     <div>
-   
       <div className="ContinueLearning-outersection">
         <div className="ContinueLearning-headig">
           <CustomSeparator />
         </div>
         <div className="ContinueLearning-topics">
           <div>Topic 1 of 5, Assignment 1 of 4</div>
-          <div className="ContinueLearning-chip">
-            <CircleIcon sx={{ color: "#FFB302 ", height: "8px" }} />
-            <span> inprogrees</span>
+          <div
+            className="ContinueLearning-chip"
+            style={{ backgroundColor: bcg }}
+          >
+            <CircleIcon
+              sx={{ color: iconColor ? iconColor : "#FFB302 ", height: "8px" }}
+            />
+            <span> {text === "upcoming" ? "upcoming" : "inprogress"}</span>
           </div>
         </div>
         <div className="Lorem-ipsum">

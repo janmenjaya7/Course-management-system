@@ -11,10 +11,12 @@ import Button from "@mui/material/Button";
 import AddBasicDetails from "./AddBasicDetais";
 import AddSyllabus from "./AddSyllabus";
 import DescribeCourse from "./DescribeCourse";
+import { useNavigate } from "react-router-dom";
 
 const steps = ["Add basic detais", "Describe course", "Add Syllabus"];
 
 function TopNavbar() {
+  const navigate = useNavigate();
   const [activeStep, setActiveStep] = useState(0);
   const [add, setAdd] = useState(100 / 3);
   const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
@@ -29,9 +31,14 @@ function TopNavbar() {
       backgroundColor: theme.palette.mode === "light" ? "#1D366F" : "#308fe8",
     },
   }));
-  const handelClick = () => {
+  const navigedate = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
     setAdd((val) => val + 33.33);
+  };
+  const handelClick = () => {
+    !(activeStep === steps.length - 1)
+      ? navigedate()
+      : navigate("/instructor/myCourse/addCourses/course-progress");
   };
   const handelBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
@@ -41,7 +48,7 @@ function TopNavbar() {
     <>
       <div className="top-navsec">
         <div className="course-nav-content">
-          <h3>Add Course</h3>
+          <div className="heding-add-course">Add Course</div>
           <div>
             <Box
               sx={{
@@ -75,6 +82,7 @@ function TopNavbar() {
               onClick={handelClick}
               variant="contained"
               style={{ margin: "0 10px" }}
+              disabled={activeStep === 3}
             >
               {activeStep === steps.length - 1 ? "Submit" : "Next"}
             </Button>

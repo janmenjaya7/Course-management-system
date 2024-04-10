@@ -28,10 +28,10 @@ function AddCources() {
             </span>
           </button>
         </div>
-        <div  className="add-cards">
-          <AddSecctionCard />
-          <AddSecctionCard />
-          <AddSecctionCard />
+        <div className="add-cards">
+          <AddSecctionCard Chips="Draft" />
+          <AddSecctionCard Chips="Published" colors="success" />
+          <AddSecctionCard Chips="Unublished" colors="primary" />
         </div>
       </div>
     </>

@@ -1,28 +1,21 @@
-.syllabusContainer1 ul {
+.syllabusContainer1 {
   list-style-type: none;
-  padding: 0;
-  margin: 0px 100px;
+  gap: 10px;
   display: flex;
   font-size: 14px;
   color: #999999;
   margin-bottom: 20px;
   margin-top: 20px;
   font-family: "Open Sans";
-}
-.syllabusContainer1 {
-  margin-top: 70px;
+  /* margin-top: 60px; */
 }
 
 .syllabusContainer1 li {
   display: flex;
   align-items: center;
-  /* margin-right: 20px; */
   font-family: "Open Sans";
 }
 
 .syllabusContainer1 img {
   margin-right: 5px;
-}
-.syllabusContainer2 {
-  /* border: 1px solid red; */
 }

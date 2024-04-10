@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
 import logo from "../../assets/logo/Group.svg";
 import "./navbar.css";
 import { useNavigate, useLocation, Link } from "react-router-dom";
@@ -27,19 +27,20 @@ function Navbar() {
     );
   };
   const { pathname } = useLocation();
-  // console.log(pathname);
 
   return (
     <>
       <div className="navbar-sections">
         <Link to="/">
-          <img src={logo} alt="somlog" />
+          <img src={logo} alt="somlog" height="55px" />
           {pathname.startsWith("/instructor") ? (
             <img src={instractor} alt="instractor" />
           ) : null}
         </Link>
         {pathname === "/courses" ||
         pathname === "/faq" ||
+        pathname === "/foum" ||
+        pathname === "/dashboard" ||
         pathname.startsWith("/courses") ? (
           <>
             <div className="liest-section">
@@ -62,22 +63,20 @@ function Navbar() {
               <Link to="/instructor/register" className="trach-text">
                 Teach on e2eHiring
               </Link>
-              <Button
-                variant="outlined"
-                className="tab-liest"
-                onClick={() => navigate("./login")}
-              >
+              <Divider
+                orientation="vertical"
+                style={{ color: "#000", borderWidth: "1px", height: "40px" }}
+              />
+              <button className="btn-login" onClick={() => navigate("./login")}>
                 Login
-              </Button>
-              <Button
-                variant="contained"
+              </button>
+              <button
                 onClick={() => navigate("./register")}
-                className="tab-liest"
+                className="btn-register"
               >
                 Register now
-              </Button>
+              </button>
             </div>
-            {/* </div> */}
           </>
         ) : null}
       </div>

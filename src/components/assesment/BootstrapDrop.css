@@ -1,18 +1,9 @@
-/* .drop-btn{
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #D8D8D8;
-border-radius: 5px;
-opacity: 1;
-    width: 446px;
-    height: 40px;
-}  */
-.drop-btn {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #D8D8D8;
-    border-radius: 5px;
-    opacity: 1;
-    width: 446px;
-    height: 40px;
-    outline: none; /* Remove outline */
+.drop-section {
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #999;
+  outline: none;
+  padding: 7px 50px;
 }
-
