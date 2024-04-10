@@ -77,10 +77,7 @@ function CoursesCardDetails({ buttonText }) {
                   <div
                     style={{
                       display: "flex",
-                      // justifyContent: "center",
-                      // alignItems: "center",
                       height: "100%",
-                      // paddingLeft: "4px",
                       border: "1px solid #CCCCCC",
                       borderRadius: "4px",
                     }}
@@ -109,7 +106,6 @@ function CoursesCardDetails({ buttonText }) {
                       In progress
                     </div>
                   </div>
-
                   <div>
                     <div
                       className="vertical"
