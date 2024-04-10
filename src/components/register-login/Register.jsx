@@ -5,7 +5,17 @@ import passwordicon from "../../assets/passwordicon/eye.svg";
 import Input from "../inpute/Input";
 import { useNavigate } from "react-router-dom";
 
+
 const Register = ({ heding, title }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [nameEroor, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [passwordVisible, setPasswordVisible] = useState(false);
+
+  const [userData, setUserData] = useState([]);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -87,6 +97,7 @@ const Register = ({ heding, title }) => {
   };
   return (
     <div>
+    <div>
       <div className="outersection">
         <div className="container-box">
           <form onSubmit={handleSubmit}>
@@ -101,6 +112,11 @@ const Register = ({ heding, title }) => {
               handleChange={handleNameChange}
               value={name}
             />
+            <div className="nameEroor">{nameEroor}</div>
+            </div>
+            <div className=" inner-input">
+
+            <Input 
             <div className="nameEroor">{nameEroor}</div>
             </div>
             <div className=" inner-input">
@@ -137,6 +153,7 @@ const Register = ({ heding, title }) => {
             <div className="passwordError">{passwordError}</div>
             </div>
             <button type="submit" className="custom-button">
+            <button type="submit" className="custom-button">
               Register
             </button>
             <p className="paragraph">
@@ -147,6 +164,8 @@ const Register = ({ heding, title }) => {
         </div>
       </div>
       <div className="login-link">
+        Already have an account?{" "}
+        <span onClick={() => navigate("/login")}>Login</span>
         Already have an account?{" "}
         <span onClick={() => navigate("/login")}>Login</span>
       </div>
