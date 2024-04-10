@@ -20,7 +20,8 @@
   border-radius: 10px;
   opacity: 1;
   padding: 30px !important;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  margin-top: 70px;
   /* box-sizing: border-box; */
 }
 .heading {
