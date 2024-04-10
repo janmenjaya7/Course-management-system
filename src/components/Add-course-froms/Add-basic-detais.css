@@ -20,6 +20,13 @@
   display: flex;
   flex-direction: column;
 }
+.heding-add-course {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: #262626;
+}
 .input-inlin {
   display: flex;
   justify-content: space-between;
@@ -100,7 +107,7 @@
   outline: none;
 }
 .syllabus-main {
-  padding: 0 100px;
+  padding: 0 150px;
 }
 .about-section {
   margin-top: 50px;
@@ -132,4 +139,6 @@
   padding: 5px 0;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  gap: 5px;
 }

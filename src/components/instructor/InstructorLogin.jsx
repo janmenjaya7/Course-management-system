@@ -12,9 +12,13 @@ const InstructorLogin = ({ heading, title }) => {
           <form>
             <h1 className="heading">{heading}</h1>
             <h4 className="Register-Now">{title}</h4>
-            <Input type={"email"} label={"Email id"} />
+            <Input type={"email"} label={"Email id"} placeholder={"Email"} />
             <div className="password-input">
-              <Input type={"password"} label={"Password"} />
+              <Input
+                type={"password"}
+                label={"Password"}
+                placeholder={"Password"}
+              />
               {<img className="img-section" src={password} alt="icon" />}
             </div>
             <button
@@ -29,7 +33,8 @@ const InstructorLogin = ({ heading, title }) => {
               <span>Privacy policies</span>
             </p>
             <div className="already-acc">
-              Already have an account? <Link to={"/instructor/login"}>Login</Link>
+              Already have an account?{" "}
+              <Link to={"/instructor/login"}>Login</Link>
             </div>
           </form>
         </div>

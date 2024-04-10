@@ -4,14 +4,13 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import "./customseparator.css";
 // import { styled } from '@mui/system';
-function handleClick(event) {
-  event.preventDefault();
-  console.info("You clicked a breadcrumb.");
-}
+// function handleClick(event) {
+//   event.preventDefault();
+//   console.info("You clicked a breadcrumb.");
+// }
 
 export default function CustomSeparator() {
   const breadcrumbs = [
-    
     <Typography
       key="1"
       sx={{ color: "1D366F", fontFamily: "Open Sans", fontSize: "15px" }}
@@ -21,7 +20,9 @@ export default function CustomSeparator() {
     <Typography
       key="2"
       sx={{
-        color: "1D366F", fontFamily: "Open Sans", fontSize: "15px" 
+        color: "1D366F",
+        fontFamily: "Open Sans",
+        fontSize: "15px",
       }}
     >
       Computer science
@@ -29,7 +30,9 @@ export default function CustomSeparator() {
     <Typography
       key="3"
       sx={{
-        color: "1D366F", fontFamily: "Open Sans", fontSize: "15px" 
+        color: "1D366F",
+        fontFamily: "Open Sans",
+        fontSize: "15px",
       }}
     >
       Learn java programming : for absolute beginners
@@ -37,7 +40,9 @@ export default function CustomSeparator() {
     <Typography
       key="4"
       sx={{
-        color: "1D366F", fontFamily: "Open Sans", fontSize: "15px" 
+        color: "1D366F",
+        fontFamily: "Open Sans",
+        fontSize: "15px",
       }}
     >
       Topic 1
@@ -45,7 +50,9 @@ export default function CustomSeparator() {
     <Typography
       key="5"
       sx={{
-        color: "1D366F", fontFamily: "Open Sans", fontSize: "15px" 
+        color: "1D366F",
+        fontFamily: "Open Sans",
+        fontSize: "15px",
       }}
     >
       Assignment 1
