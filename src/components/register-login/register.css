@@ -2,9 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 80px; */
-  background: #fcfcfc;
-  opacity: 0.8;
+  background: #fff;
+  border-radius: 10px;
 }
 #login-main-section {
   margin-top: 80px;
@@ -70,11 +69,6 @@
   top: 70%;
   left: 90%;
   transform: translateY(-50%);
-
-
-
-
-
 }
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 body {
@@ -83,4 +77,3 @@ body {
 .error-message {
   color: red;
 }
-

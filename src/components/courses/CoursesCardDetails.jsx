@@ -1,27 +1,27 @@
-import javaImg from '../../assets/markus-spiske/markus-spiske-1LLh8k2_YFk-unsplash.png'
-import MyTabs from './MyTabs'
-import './CoursesCardDetails.css'
-import BasicBreadcrumbs from './BasicBreadcrumbs'
-import SizesChips from './SizesChips'
-import Modals from '../Certificate-modal/Modal'
-import { useState } from 'react'
-import Register from '../register-login/Register'
+import javaImg from "../../assets/markus-spiske/markus-spiske-1LLh8k2_YFk-unsplash.png";
+import MyTabs from "./MyTabs";
+import "./CoursesCardDetails.css";
+import BasicBreadcrumbs from "./BasicBreadcrumbs";
+import SizesChips from "./SizesChips";
+import Modals from "../Certificate-modal/Modal";
+import { useState } from "react";
+import Register from "../register-login/Register";
 
 function CoursesCardDetails({ buttonText }) {
-  const [open, setOpen] = useState(false)
-  const [isEnrolled, setIsEnrolled] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [isEnrolled, setIsEnrolled] = useState(false);
 
   const handleOpenEnroll = () => {
-    setOpen(true)
-    setIsEnrolled(true)
-  }
+    setOpen(true);
+    setIsEnrolled(true);
+  };
 
   return (
     <>
       <Modals
         open={open}
         setOpen={setOpen}
-        ModalsContent={<Register setOpen={setOpen} />}
+        ModalsContent={<Register setOpen={setOpen} title="Register Now" />}
       />
       <div id="course-details">
         <div className="primaryDiv1">
@@ -52,86 +52,82 @@ function CoursesCardDetails({ buttonText }) {
 
             <div
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                marginBottom: '40px',
-                marginTop: '60px',
+                display: "flex",
+                alignItems: "center",
+                marginBottom: "40px",
+                marginTop: "60px",
               }}
             >
               <button
                 className="btn-enroll"
                 onClick={handleOpenEnroll}
-                style={{ marginRight: '20px' }}
+                style={{ margin: "0 20px" }}
               >
-                {isEnrolled ? 'Start Learning Now' : 'Enroll Now'}
+                {isEnrolled ? "Start Learning Now" : "Enroll Now"}
               </button>
 
               {isEnrolled ? (
                 <div
                   style={{
-                    display: 'flex',
-                    height: '40px',
-                    alignItems: 'center',
+                    display: "flex",
+                    height: "40px",
+                    alignItems: "center",
                   }}
                 >
                   <div
                     style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      height: '100%',
-                      paddingLeft: '4px',
-                      border: '1px solid #CCCCCC',
-                      borderRadius: '4px',
+                      display: "flex",
+                      height: "100%",
+                      border: "1px solid #CCCCCC",
+                      borderRadius: "4px",
                     }}
                   >
-                    <span
+                    <div
                       style={{
-                        color: '#262626',
-                        fontSize: '15px',
-                        paddingLeft: '10px',
-                        paddingRight: '10px',
+                        color: "#262626",
+                        fontSize: "13px",
+                        textAlign: "center",
+                        padding: " 10px",
                       }}
                     >
-                      <ul
+                      <div
                         style={{
-                          textAlign: 'center',
-                          margin: 0,
-                          padding: 0,
-                          listStylePosition: 'inside',
+                          textAlign: "center",
+                          listStylePosition: "inside",
                         }}
                       >
                         <li
-                          style={{ listStyleTypeColor: ' #F89206', margin: 0 }}
-                        >
-                          In progress
-                        </li>
-                      </ul>
-                    </span>
+                          style={{
+                            listStyleTypeColor: " #F89206",
+                            padding: "0 20px",
+                          }}
+                        ></li>
+                      </div>
+                      In progress
+                    </div>
                   </div>
-
                   <div>
                     <div
                       className="vertical"
                       style={{
-                        color: '#999999',
-                        width: '1px',
-                        border: '1px solid #999999',
-                        height: '30px',
+                        color: "#999999",
+                        width: "1px",
+                        border: "1px solid #999999",
+                        height: "30px",
                       }}
                     ></div>
                   </div>
                   <div>
                     <span
                       style={{
-                        color: '#F89206',
-                        fontSize: '15px',
-                        paddingRight: '10px',
-                        paddingTop: '9px',
-                        paddingBottom: '7px',
-                        paddingLeft: '20px',
-                        border: '1px solid #CCCCCC',
-                        borderRadius: '4px',
+                        color: "#F89206",
+                        fontSize: "15px",
+                        paddingRight: "10px",
+                        paddingTop: "9px",
+                        paddingBottom: "7px",
+                        paddingLeft: "20px",
+                        border: "1px solid #CCCCCC",
+                        borderRadius: "4px",
                       }}
                     >
                       50% completed
@@ -140,9 +136,9 @@ function CoursesCardDetails({ buttonText }) {
 
                   <div
                     style={{
-                      marginLeft: '10px',
-                      fontSize: '12px',
-                      border: 'none',
+                      marginLeft: "10px",
+                      fontSize: "12px",
+                      border: "none",
                     }}
                   >
                     <span>last activity on 09/04/24</span>
@@ -161,7 +157,7 @@ function CoursesCardDetails({ buttonText }) {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default CoursesCardDetails
+export default CoursesCardDetails;

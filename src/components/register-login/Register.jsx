@@ -37,8 +37,8 @@ const Register = ({ heding, title }) => {
               Register
             </button>
             <p className="paragraph">
-              By continuing, you agree to our <span>Terms of Use</span> and{" "}
-//               <span>Privacy policies</span>
+              By continuing, you agree to our <span>Terms of Use</span> and
+              <span>Privacy policies</span>
             </p>
           </form>
         </div>
