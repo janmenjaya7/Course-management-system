@@ -18,6 +18,7 @@ const Input = ({type,label,placeholder,handleChange,value}) => {
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
          onChange={handleChange} value={value}/>
+        
       </div>
     </div>
   </>

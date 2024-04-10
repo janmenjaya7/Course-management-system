@@ -5,92 +5,137 @@ import passwordicon from "../../assets/passwordicon/eye.svg";
 import Input from "../inpute/Input";
 import { useNavigate } from "react-router-dom";
 const Register = ({ heding, title }) => {
-const[name,setName]=useState("");
-const[email,setEmail]=useState("");
-const[password,setPassword]=useState("");
-const[nameEroor,setNameError]=useState("");
-const[emailError,setEmailError]=useState("");
-const[passwordError,setPasswordError]=useState("")
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [nameEroor, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [passwordVisible, setPasswordVisible] = useState(false);
 
-const[userData,setUserData]=useState([])
+  const [userData, setUserData] = useState([]);
 
   const navigate = useNavigate();
 
+  const handleNameChange=(event)=>{
+  setName(event.target.value);
+  setNameError("")
+   }
   
+   const handleEmailChange=(event)=>{
+  setEmail(event.target.value)
+  setEmailError("")
+   }
+   const handlePasswordChnage=(event)=>{
+    setPassword(event.target.value);
+    setPasswordError("");
+   }
   const handleSubmit = (event) => {
     event.preventDefault();
-    setNameError("");
-    setEmailError("");
-    setPasswordError("");
-   if(!name.trim()){
+
+    let hasError = false;
+    if (!name.trim()) {
+      // alert("name is required")
+      setNameError("Name is Required");
+      // return;
+      hasError = true;
+    }
+
+    if (email.trim() === "") {
+      setEmailError("Email is Required");
+      hasError = true;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setEmailError("Invalid Email");
+      hasError = true;
+    }
+
+    if (password.trim() === "") {
+      setPasswordError("Password is Required");
+      hasError = true;
+    } else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/.test(password)) {
+      setPasswordError(
+        "Password must contain at least one letter and one number"
+      );
+      hasError = true;
+    }
+    if (!hasError) {
+      const data = { name: name, email: email, password: password };
+
+      const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+      // existingUsers.push(data);
+      // console.log("existingUsers", existingUsers);
      
-    // alert("name is required")
-    setNameError("Name is Required")
-    return;
-   }
-   if(!email.trim()){
-   
-    // alert("email is required")
-    setEmailError("Email is Required")
-    return;
-   }
-   if(!password.trim()){
- 
-    // alert("password is required")
-    setPasswordError("Password is Required")
-    return;
-   
-   }else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{7,}$/.test(password)){
-   setPasswordError("Password must contain at least one letter and one number")
-   return;
-   }
-   
-   navigate("/courses");
+      const isUserExist = existingUsers.filter((user) => user.email === email);
+      console.log("isUserExist", isUserExist);
+      if (isUserExist.length>=1 ) {
+        alert("you already register");
+      } else {
+        // existingUsers.push(data);
+        // localStorage.setItem("userData", JSON.stringify([...existingUsers,data]));
+        // navigate("/courses");
+
+        localStorage.setItem('users', JSON.stringify([...existingUsers, data]));
+        navigate("/courses");
+      }
+  
+    }
+  };
+
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
   };
   return (
     <div id="register-main-section">
-      {userData.map((item)=>{
-    return <p>{item}</p>
-      })}
       <div className="outersection">
-
         <div className="container-box">
           <form onSubmit={handleSubmit}>
             <h1 className="heading">{heding}</h1>
             <h4 className="Register-Now">{title}</h4>
-            <Input
+            <div className=" inner-input">
+
+            <Input 
               type={"text"}
               label={"Full name"}
               placeholder={"Full name"}
-              handleChange={(e)=>setName(e.target.value)}
+              handleChange={handleNameChange}
               value={name}
             />
-           <p className="nameEroor">{nameEroor}</p>
-            <Input
+            <div className="nameEroor">{nameEroor}</div>
+            </div>
+            <div className=" inner-input">
+
+            <Input 
               type={"email"}
               label={"Email id"}
               placeholder={"Email"}
-              handleChange={(e)=>setEmail(e.target.value)}
+              handleChange={handleEmailChange}
               value={email}
             />
-            <p className="emailError">{emailError}</p>
+            <div className="emailError">{emailError}</div>
+            </div>
+            <div className=" inner-input">
+
             <div className="password-input">
-              <Input
-                type={"password"}
+              <Input 
+                type={passwordVisible ? "text" : "password"}
                 label={"Password"}
                 placeholder={"Password"}
-                handleChange={(e)=>setPassword(e.target.value)}
+                handleChange={handlePasswordChnage}
                 value={password}
               />
-              <p className="passwordError">{passwordError}</p>
-              {<img className="img-section" src={passwordicon} alt="icon" />}
+
+              {
+                <img
+                  className="img-section"
+                  src={passwordicon}
+                  alt="icon"
+                  onClick={togglePasswordVisibility}
+                />
+              }
             </div>
-            <button
-              // onClick={() => navigate("/courses")}
-              type="submit"
-              className="btn custom-button"
-    
-            >
+            <div className="passwordError">{passwordError}</div>
+            </div>
+            <button type="submit" className="custom-button">
               Register
             </button>
             <p className="paragraph">
@@ -101,11 +146,12 @@ const[userData,setUserData]=useState([])
         </div>
       </div>
       <div className="login-link">
-        Already have an account? <span>Login</span>
+        Already have an account?{" "}
+        <span onClick={() => navigate("/login")}>Login</span>
       </div>
+     
     </div>
   );
 };
 
 export default Register;
-

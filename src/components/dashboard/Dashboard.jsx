@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> b5205e8f7a8b9ca07eddd5b3f8c0de97f1479de3
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
