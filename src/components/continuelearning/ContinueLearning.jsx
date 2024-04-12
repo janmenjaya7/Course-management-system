@@ -6,6 +6,10 @@ import Modals from "../Certificate-modal/Modal";
 import SubmitAssignment from "../submitAssignment/SubmitAssignment";
 const ContinueLearning = () => {
   const [open, setOpen] = useState(false);
+  const bcg = "#FFFFFF"; 
+const iconColor = "#FF0000"; 
+const text = "upcoming";
+
   return (
     <>
       <Modals
@@ -19,15 +23,20 @@ const ContinueLearning = () => {
         </div>
         <div className="ContinueLearning-topics">
           <div>Topic 1 of 5, Assignment 1 of 4</div>
-          <div className="ContinueLearning-chip">
-            <CircleIcon sx={{ color: "#FFB302 ", height: "8px" }} />
-            <span> inprogrees</span>
+          <div
+            className="ContinueLearning-chip"
+            style={{ backgroundColor: bcg }}
+          >
+            <CircleIcon
+              sx={{ color: iconColor ? iconColor : "#FFB302 ", height: "8px" }}
+            />
+            <span> {text === "upcoming" ? "upcoming" : "inprogress"}</span>
           </div>
         </div>
         <div className="Lorem-ipsum">
           <p>Lorem ipsum</p>
         </div>
-
+{/* ss */}
         <div className="ContinueLearning-heading">
           <h1>lipsum dolor sit amet, consetetur sadipscing</h1>
           <button onClick={() => setOpen(true)}>Submit Assignment</button>
