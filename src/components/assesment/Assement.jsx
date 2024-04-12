@@ -33,7 +33,9 @@ const Assement = ({ setOpen }) => {
           ></ReactQuill>
         </div>
         <div className="btn-sectons">
-          <button className="btn-cancel">Cancel</button>
+          <button className="btn-cancel" onClick={() => setOpen(false)}>
+            Cancel
+          </button>
           <button className="btn-submit">Submit</button>
         </div>
       </div>

@@ -1,33 +1,44 @@
-import javaImg from '../../assets/markus-spiske/markus-spiske-1LLh8k2_YFk-unsplash.png'
-import MyTabs from './MyTabs'
-import './CoursesCardDetails.css'
-import BasicBreadcrumbs from './BasicBreadcrumbs'
-import SizesChips from './SizesChips'
-import Modals from '../Certificate-modal/Modal'
-import { useState } from 'react'
-import Register from '../register-login/Register'
+import javaImg from "../../assets/markus-spiske/markus-spiske-1LLh8k2_YFk-unsplash.png";
+import MyTabs from "./MyTabs";
+import "./CoursesCardDetails.css";
+import Divider from "@mui/material/Divider";
+import SizesChips from "./SizesChips";
+import Modals from "../Certificate-modal/Modal";
+import { useState } from "react";
+import Register from "../register-login/Register";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import CircleIcon from "@mui/icons-material/Circle";
+import { useNavigate } from "react-router-dom";
 
-function CoursesCardDetails({ buttonText }) {
-  const [open, setOpen] = useState(false)
-  const [isEnrolled, setIsEnrolled] = useState(false)
+function CoursesCardDetails() {
+  const [open, setOpen] = useState(false);
+  const [isEnrolled, setIsEnrolled] = useState(false);
+  const navigate = useNavigate();
 
   const handleOpenEnroll = () => {
-    setOpen(true)
-    setIsEnrolled(true)
-  }
-
+    if (!isEnrolled) {
+      setOpen(true);
+      setIsEnrolled(true);
+    } else navigate("/dashboard-card-details/card-status");
+  };
   return (
     <>
       <Modals
         open={open}
         setOpen={setOpen}
-        ModalsContent={<Register setOpen={setOpen} />}
+        ModalsContent={<Register setOpen={setOpen} title="Register Now" />}
       />
       <div id="course-details">
         <div className="primaryDiv1">
           <div>
             <div className="breadCrumbsClass">
-              <BasicBreadcrumbs />
+              <div className="course-text">
+                Allcourses
+                <NavigateNextIcon fontSize="small" color="" />
+                Java
+                <NavigateNextIcon fontSize="small" />
+                Python
+              </div>
             </div>
             <div>
               <SizesChips />
@@ -49,103 +60,27 @@ function CoursesCardDetails({ buttonText }) {
               <li>12 days</li>
               <li>Added 2 days ago</li>
             </div>
-
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                marginBottom: '40px',
-                marginTop: '60px',
-              }}
-            >
-              <button
-                className="btn-enroll"
-                onClick={handleOpenEnroll}
-                style={{ marginRight: '20px' }}
-              >
-                {isEnrolled ? 'Start Learning Now' : 'Enroll Now'}
+            <div className="btn-completed">
+              <button className="btn-enroll" onClick={handleOpenEnroll}>
+                {isEnrolled ? "Start Learning Now" : "Enroll Now"}
+                {!isEnrolled
+                  ? navigate("/dashboard-card-details/card-status")
+                  : null}
               </button>
-
               {isEnrolled ? (
-                <div
-                  style={{
-                    display: 'flex',
-                    height: '40px',
-                    alignItems: 'center',
-                  }}
-                >
-                  <div
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      height: '100%',
-                      paddingLeft: '4px',
-                      border: '1px solid #CCCCCC',
-                      borderRadius: '4px',
-                    }}
-                  >
-                    <span
-                      style={{
-                        color: '#262626',
-                        fontSize: '15px',
-                        paddingLeft: '10px',
-                        paddingRight: '10px',
-                      }}
-                    >
-                      <ul
-                        style={{
-                          textAlign: 'center',
-                          margin: 0,
-                          padding: 0,
-                          listStylePosition: 'inside',
-                        }}
-                      >
-                        <li
-                          style={{ listStyleTypeColor: ' #F89206', margin: 0 }}
-                        >
-                          In progress
-                        </li>
-                      </ul>
-                    </span>
-                  </div>
-
-                  <div>
-                    <div
-                      className="vertical"
-                      style={{
-                        color: '#999999',
-                        width: '1px',
-                        border: '1px solid #999999',
-                        height: '30px',
-                      }}
-                    ></div>
+                <div className="btn-inprogress">
+                  <div className="btn-outer-section">
+                    <div className="in-progress-text">
+                      <CircleIcon fontSize="string" color="warning" />
+                      In progress
+                    </div>
+                    <Divider orientation="vertical" className=" divider-sec" />
+                    <div className="completed-text">50% completed</div>
                   </div>
                   <div>
-                    <span
-                      style={{
-                        color: '#F89206',
-                        fontSize: '15px',
-                        paddingRight: '10px',
-                        paddingTop: '9px',
-                        paddingBottom: '7px',
-                        paddingLeft: '20px',
-                        border: '1px solid #CCCCCC',
-                        borderRadius: '4px',
-                      }}
-                    >
-                      50% completed
+                    <span className="date-progess">
+                      last activity on 09/04/24
                     </span>
-                  </div>
-
-                  <div
-                    style={{
-                      marginLeft: '10px',
-                      fontSize: '12px',
-                      border: 'none',
-                    }}
-                  >
-                    <span>last activity on 09/04/24</span>
                   </div>
                 </div>
               ) : null}
@@ -161,7 +96,7 @@ function CoursesCardDetails({ buttonText }) {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default CoursesCardDetails
+export default CoursesCardDetails;

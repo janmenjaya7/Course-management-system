@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 80px; */
-  background: #fcfcfc;
-  opacity: 0.8;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 80px;
 }
 #login-main-section {
   margin-top: 80px;
@@ -122,4 +122,3 @@ body {
 .error-message {
   color: red;
 }
-

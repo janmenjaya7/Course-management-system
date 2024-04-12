@@ -157,8 +157,8 @@ const Register = ({ heding, title }) => {
               Register
             </button>
             <p className="paragraph">
-              By continuing, you agree to our <span>Terms of Use</span> and{" "}
-//               <span>Privacy policies</span>
+              By continuing, you agree to our <span>Terms of Use</span> and
+              <span>Privacy policies</span>
             </p>
           </form>
         </div>
@@ -175,8 +175,6 @@ const Register = ({ heding, title }) => {
 };
 
 export default Register;
-
-
 
 // import React, { useState } from 'react';
 // import { useForm } from 'react-hook-form';
@@ -259,7 +257,3 @@ export default Register;
 // };
 
 // export default Register;
-
-
-
-

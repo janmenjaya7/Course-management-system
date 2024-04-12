@@ -1,7 +1,8 @@
 import React from "react";
 import "./BootstrapDrop.css";
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.js";
+// import "bootstrap/dist/js/bootstrap.js";
+import { Link } from "react-router-dom";
 const BootstrapDrop = () => {
   return (
     <div>
@@ -16,19 +17,19 @@ const BootstrapDrop = () => {
         </button>
         <ul className="dropdown-menu">
           <li>
-            <a class="dropdown-item" href="#">
+            <Link className="dropdown-item" to="#">
               Action
-            </a>
+            </Link>
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <Link className="dropdown-item" to="#">
               Another action
-            </a>
+            </Link>
           </li>
           <li>
-            <a class="dropdown-item" href="#">
+            <Link className="dropdown-item" to="#">
               Something else here
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

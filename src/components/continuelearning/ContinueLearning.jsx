@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./continuelearning.css";
 import CustomSeparator from "./CustomSeparator";
 import CircleIcon from "@mui/icons-material/Circle";
-const ContinueLearning = ({ text, bcg, iconColor }) => {
-  console.log("this is icons color", iconColor);
+import Modals from "../Certificate-modal/Modal";
+import SubmitAssignment from "../submitAssignment/SubmitAssignment";
+const ContinueLearning = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <div>
+    <>
+      <Modals
+        open={open}
+        setOpen={setOpen}
+        ModalsContent={<SubmitAssignment setOpen={setOpen} />}
+      />
       <div className="ContinueLearning-outersection">
         <div className="ContinueLearning-headig">
           <CustomSeparator />
@@ -28,7 +35,7 @@ const ContinueLearning = ({ text, bcg, iconColor }) => {
 {/* ss */}
         <div className="ContinueLearning-heading">
           <h1>lipsum dolor sit amet, consetetur sadipscing</h1>
-          <button>Submit Assignment</button>
+          <button onClick={() => setOpen(true)}>Submit Assignment</button>
         </div>
         <div className="ContinueLearning-paragrhaph">
           <div>
@@ -110,7 +117,7 @@ const ContinueLearning = ({ text, bcg, iconColor }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
