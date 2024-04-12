@@ -6,6 +6,10 @@ import Modals from "../Certificate-modal/Modal";
 import SubmitAssignment from "../submitAssignment/SubmitAssignment";
 const ContinueLearning = () => {
   const [open, setOpen] = useState(false);
+  const bcg = "#FFFFFF"; 
+const iconColor = "#FF0000"; 
+const text = "upcoming";
+
   return (
     <>
       <Modals
