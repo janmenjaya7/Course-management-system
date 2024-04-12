@@ -25,7 +25,7 @@ const ContinueLearning = ({ text, bcg, iconColor }) => {
         <div className="Lorem-ipsum">
           <p>Lorem ipsum</p>
         </div>
-
+{/* ss */}
         <div className="ContinueLearning-heading">
           <h1>lipsum dolor sit amet, consetetur sadipscing</h1>
           <button>Submit Assignment</button>
