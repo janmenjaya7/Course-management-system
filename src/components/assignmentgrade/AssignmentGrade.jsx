@@ -2,9 +2,17 @@ import React from "react";
 import Grade from "../grade/Grade";
 import CustomSeparator from "../continuelearning/CustomSeparator";
 import CircleIcon from "@mui/icons-material/Circle";
-import "../continuelearning/continuelearning.css";
+import "./assignmentGrade.css";
 
-const AssignmentGrade = ({ opc,message ,completed,bcg,iconcolor}) => {
+const AssignmentGrade = ({
+  opc,
+  message,
+  completed,
+  bcg,
+  iconcolor,
+  heding,
+}) => {
+  const handelChangeGrade = () => {};
   return (
     <div>
       <div>
@@ -14,9 +22,12 @@ const AssignmentGrade = ({ opc,message ,completed,bcg,iconcolor}) => {
           </div>
           <div className="ContinueLearning-topics">
             <div>Topic 1 of 5, Assignment 1 of 4</div>
-            <div className="ContinueLearning-chip" style={{backgroundColor:bcg}}>
-              <CircleIcon sx={{ color: iconcolor , height: "8px" }} />
-              <span> {completed}</span>
+            <div
+              className="ContinueLearning-chip"
+              style={{ backgroundColor: bcg }}
+            >
+              <CircleIcon sx={{ color: iconcolor, height: "8px" }} />
+              <span>{completed}</span>
             </div>
           </div>
 
@@ -26,11 +37,13 @@ const AssignmentGrade = ({ opc,message ,completed,bcg,iconcolor}) => {
 
           <div className="ContinueLearning-heading">
             <h1>lipsum dolor sit amet, consetetur sadipscing</h1>
-            <button>Submit Assignment</button>
+            <div className="btn-submit-main">
+              <button>Submit Assignment</button>
+              <span>Submitted on 03/02/2024</span>
+            </div>
           </div>
-          <div className="grade">
-            <Grade opc={opc} message={message}  />
-            {/* <Grade bcg={"#ffffff"} /> */}
+          <div className="grade" onClick={handelChangeGrade}>
+            <Grade opc={opc} message={message} heding={heding} />
           </div>
 
           <div className="ContinueLearning-paragrhaph">

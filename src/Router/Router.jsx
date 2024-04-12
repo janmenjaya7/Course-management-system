@@ -18,6 +18,8 @@ import Dashboard from "../components/dashboard/Dashboard";
 import DashboardCard from "../components/dashboard/DashboardCard";
 import AddCources from "../components/Add-cources/AddCources";
 import StudentsEnrolledData from "../components/Students-enrolled/StudentsEnrolledData";
+import ContinueLearning from "../components/continuelearning/ContinueLearning";
+import Assignment2Grade from "../components/Assignment2Grade/Assignment2Grade";
 function Router({ id }) {
   const location = useLocation();
   return (
@@ -33,6 +35,10 @@ function Router({ id }) {
         <Route
           path={`/courses/courses-card-details/${id}`}
           element={<CoursesCardDetails />}
+        />
+        <Route
+          path={`/dashboard-card-details/card-status`}
+          element={<ContinueLearning />}
         />
         <Route path={`/dashboard-card-details`} element={<DashboardCard />} />
         <Route
@@ -66,12 +72,7 @@ function Router({ id }) {
 
         <Route
           path="/instructor/register"
-          element={
-            <InstructorRegister
-              // heding="Start teaching on e2eHiring"
-              title="Register as Instructor"
-            />
-          }
+          element={<InstructorRegister title="Register as Instructor" />}
         />
         <Route
           path="/instructor/login"
@@ -89,6 +90,10 @@ function Router({ id }) {
         <Route
           path="/instructor/myCourse/addCourses/course-progress/student-data"
           element={<StudentsEnrolledData />}
+        />
+        <Route
+          path="/dashboard-card-details/card-status/assignment-status"
+          element={<Assignment2Grade />}
         />
         <Route path="*" element={<Error />} />
       </Routes>
