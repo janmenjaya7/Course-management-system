@@ -6,7 +6,7 @@ import { json, useNavigate } from "react-router-dom";
 import toast, { Toaster } from 'react-hot-toast';
 
 function Login({ heding, title }) {
-  const notify = () => toast("Wrong login or password.")
+  // const notify = () => toast("Wrong login or password.")
 
   const[email,setEmail]=useState("")
   const[password,setPassword]=useState("")
@@ -81,7 +81,7 @@ const handleSubmit = (event) => {
     if (res) {
       navigate("/courses");
     } else {
-     notify();
+    //  notify();
     }
   }
 };
@@ -131,7 +131,7 @@ const handleSubmit = (event) => {
       <div className="login-link">
       Don't have an account?  <span onClick={()=>navigate("/student/register")}>Register</span>
       </div>
-      <Toaster />
+      {/* <Toaster /> */}
     </div>
   );
 }
