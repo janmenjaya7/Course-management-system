@@ -1,6 +1,5 @@
 import React from "react";
 import "./landingPages.css";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import image from "../../assets/logo/Group.svg";
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +10,7 @@ function LandingPages() {
       <div id="main-section">
         <div className="card" style={{ border: "none" }}>
           <div className="logos">
-            <img src={image} alt="logo" height={"71px"} width={"209px"} />
+            <img src={image} alt="logo" height={"71px"} width={"200px"} />
           </div>
           <div className="text-section">
             <div className=" text-center">

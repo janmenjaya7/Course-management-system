@@ -5,7 +5,14 @@ const Assignment2Grade = () => {
   return (
     <div>
       <div>
-        <AssignmentGrade opc={0.1} message={""} completed={"completed"} bcg={"#D7ECEC"} iconcolor={"#3AA2A0"}/>
+        <AssignmentGrade
+          opc={0.1}
+          message={""}
+          heding={"Grading will be given after evaluation"}
+          completed={"completed"}
+          bcg={"#D7ECEC"}
+          iconcolor={"#3AA2A0"}
+        />
       </div>
     </div>
   );

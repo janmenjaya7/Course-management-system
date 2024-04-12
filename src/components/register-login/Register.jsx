@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 const Register = ({ heding, title }) => {
   const navigate = useNavigate();
-
   return (
     <div>
       <div className="outersection">
@@ -51,8 +50,6 @@ const Register = ({ heding, title }) => {
 };
 
 export default Register;
-
-
 
 // import React, { useState } from 'react';
 // import { useForm } from 'react-hook-form';
@@ -135,7 +132,3 @@ export default Register;
 // };
 
 // export default Register;
-
-
-
-

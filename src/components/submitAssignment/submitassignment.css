@@ -16,6 +16,23 @@
 }
 .submit-doc-section {
   padding: 0 50px;
+  margin-bottom: 50px;
+}
+.img-after-uplode {
+  background: #fff;
+  box-shadow: 0px 2px 6px #00000014;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cancle-icons {
+  height: 24px;
+  width: 24px;
+  margin: 0 15px;
 }
 .submit-innersection {
   border: 1px dashed #1d366f;
@@ -59,7 +76,7 @@
   border: none;
   outline: none;
   background-color: #1d366f;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   color: white;
   border-radius: 5px;
 }
@@ -67,5 +84,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  padding: 10px;
+  border-top: 2px solid #d8d8d8;
+}
+.img-folder {
+  max-width: 300px;
+  max-height: 100px;
   padding: 10px;
 }
