@@ -1,10 +1,13 @@
 .container-login {
   width: 450px !important;
-  height: 370px !important;
+  height: 400px !important;
   background-color: #fff;
   border: 1px solid #eeeeee;
   border-radius: 10px;
   padding: 30px !important;
   margin-bottom: 15px;
   /* box-sizing: border-box; */
+}
+.login-input{
+  height: 90px;
 }

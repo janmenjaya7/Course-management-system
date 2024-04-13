@@ -5,7 +5,7 @@ function DashboardCard() {
   return (
     <>
       <div>
-        <CoursesCardDetails />
+        <CoursesCardDetails  />
       </div>
     </>
   );

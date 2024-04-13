@@ -1,7 +1,7 @@
 import React from "react";
 // reusable component
 import "./input.css";
-const Input = ({ type, label, placeholder }) => {
+const Input = ({ type, label, placeholder,handleChange }) => {
   return (
     <>
       <div>
@@ -17,7 +17,7 @@ const Input = ({ type, label, placeholder }) => {
             type={type}
             placeholder={placeholder}
             className="form-control shadow-none"
-          />
+        onChange={handleChange}  />
         </div>
       </div>
     </>
