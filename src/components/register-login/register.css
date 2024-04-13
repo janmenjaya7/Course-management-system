@@ -4,7 +4,7 @@
   align-items: center;
   background: #fff;
   border-radius: 10px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 #login-main-section {
   margin-top: 80px;
@@ -33,7 +33,6 @@
   margin-top: 5px;
 }
 .Register-Now {
-  
   font-family: Open Sans;
   font-size: 20px;
   text-align: center;
@@ -85,8 +84,7 @@
   transform: translateY(-50%);
 }
 
-
-.nameEroor{
+.nameEroor {
   color: rgba(255, 0, 0, 0.625);
   margin: 0;
   font-family: Open Sans;
@@ -94,26 +92,23 @@
   /* line-height: 0px; */
   margin-top: -15px;
 }
-.emailError{
+.emailError {
   /* margin: 0; */
   color: rgba(255, 0, 0, 0.625);
   font-family: Open Sans;
   font-size: 14px;
   margin-top: -15px;
- 
 }
-.passwordError{
+.passwordError {
   margin: 0;
   color: rgba(255, 0, 0, 0.625);
   font-family: Open Sans;
   font-size: 14px;
   margin-top: -15px;
 }
-.inner-input{
+.inner-input {
   height: 90px;
 }
-
-
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 body {
