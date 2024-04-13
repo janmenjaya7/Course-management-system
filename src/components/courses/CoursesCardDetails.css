@@ -63,12 +63,9 @@
 }
 
 .tabNav {
-  /* width: 1366px; */
   height: 48px;
   background: #ffffff;
   box-shadow: 0px 2px 4px #0000000f;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .heding-dis {

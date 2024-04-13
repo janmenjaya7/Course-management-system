@@ -32,7 +32,7 @@ function Navbar() {
     <>
       <div className="navbar-sections">
         <Link to="/">
-          <img src={logo} alt="somlog" height="55px" />
+          <img src={logo} alt="somlog" height="40px" width="118px" />
           {pathname.startsWith("/instructor") ? (
             <img src={instractor} alt="instractor" />
           ) : null}

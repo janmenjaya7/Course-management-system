@@ -1,121 +1,113 @@
-.ContinueLearning-outersection{
-
-height: 642px;
-margin-top: 80px;
-
+.ContinueLearning-outersection {
+  height: 642px;
+  margin-top: 80px;
 }
-.ContinueLearning-headig{
-    display: flex;
-    padding: 0 50px;
-   margin-left: 20px;
-   
-
+.ContinueLearning-headig {
+  display: flex;
+  padding: 0 50px;
+  margin-left: 20px;
 }
-
 
 .ContinueLearning-chip {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    background-color: #ffb302;
-    border-radius: 13px;
-    opacity: 0.7;
-    color: #000;
-    height: 26px;
-    padding: 0 12px;
-    box-sizing: border-box; 
-    text-align: center;
-    
-  }
-  
-.ContinueLearning-topics{
-    display: flex;
-    align-items: center;
-    gap: 20px; 
-    padding: 0 70px;
-    height: 56px;
-    background: #F8F8F8;
-   color: #000;
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffb302;
+  border-radius: 13px;
+  opacity: 0.7;
+  color: #000;
+  height: 26px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  text-align: center;
 }
-.Lorem-ipsum p{
-    margin: 0;
-   
+
+.ContinueLearning-topics {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 70px;
+  height: 56px;
+  background: #f8f8f8;
+  color: #000;
 }
-.Lorem-ipsum{
-    width: 1166px;
-    margin: auto;
+.Lorem-ipsum p {
+  margin: 0;
 }
-.grade{
-    width: 1166px;
-    margin: auto;
+.Lorem-ipsum {
+  width: 1166px;
+  margin: auto;
+}
+.grade {
+  width: 1166px;
+  margin: auto;
   padding-top: 10px;
-padding-bottom: 10px;
+  padding-bottom: 10px;
 }
-.ContinueLearning-heading{
- 
- width: 1166px;
+.ContinueLearning-heading {
+  width: 1166px;
 
-
- margin: auto;
+  margin: auto;
 }
-.ContinueLearning-heading h1{
-    
-    font-family: Open Sans;
-    font-size:30px ;
- letter-spacing: 0px;
-  color: #252D41;
+.ContinueLearning-heading h1 {
+  font-family: Open Sans;
+  font-size: 30px;
+  letter-spacing: 0px;
+  color: #252d41;
 }
-.ContinueLearning-heading{
-    display: flex;
+.ContinueLearning-heading {
+  display: flex;
 }
-.ContinueLearning-heading button{
-    margin-left: auto;
+.ContinueLearning-heading button {
+  margin-left: auto;
 }
-.ContinueLearning-heading> button{
-    background-color: #1D366F;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-   opacity: 1;
-   height: 40px;
-   color: white;
-   width: 172px;
+.ContinueLearning-heading > button {
+  background-color: #1d366f;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  opacity: 1;
+  height: 40px;
+  color: white;
+  width: 172px;
 }
 
-.ContinueLearning-paragrhaph{
-    width: 1166px;
-    height: 410px; 
- 
-    margin: auto;
-    overflow: hidden;
-    overflow-y: auto;
- 
+.ContinueLearning-paragrhaph {
+  width: 1166px;
+  height: 410px;
+
+  margin: auto;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .ContinueLearning-paragrhaph::-webkit-scrollbar {
-    width: 1px; 
+  width: 1px;
 }
 
 .ContinueLearning-paragrhaph::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+  background: #f1f1f1;
 }
 
 .ContinueLearning-paragrhaph::-webkit-scrollbar-thumb {
-    background: #ffffff; 
-    border-radius: 6px; 
+  background: #ffffff;
+  border-radius: 6px;
 }
-.ContinueLearning-paragrhaph{
-padding: 10px;
+.ContinueLearning-paragrhaph {
+  padding: 10px;
 }
-.ContinueLearning-paragrhaph h3{
-    font: normal normal 600 16px/30px Open Sans;
-letter-spacing: 0px;
-color: #252D41;
+.ContinueLearning-paragrhaph h3 {
+  font: normal normal 600 16px/30px Open Sans;
+  letter-spacing: 0px;
+  color: #252d41;
 }
-.ContinueLearning-paragrhaph p{
-   
-    font-family: Open Sans;
-    font-size: 17px;
-letter-spacing: 0px;
-color: #252D41;
+.ContinueLearning-paragrhaph p {
+  font-family: Open Sans;
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #252d41;
+}
+.button-Nav {
+  height: 48px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px #0000000f;
 }

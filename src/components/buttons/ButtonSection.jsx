@@ -2,7 +2,7 @@ import React from "react";
 import Button from '@mui/material/Button';
 import "./ButtonSection.css";
 
-const ButtonSection = ({ id, variant, onClick, buttonText }) => {
+const ButtonSection = ({ id, variant, onClick, buttonText ,bgButton}) => {
   return (
     <> 
     let buttonClass = 'custom-button';
@@ -20,7 +20,6 @@ return (
     {buttonText}
   </Button>
 );
-
       <button className="btn-background">{bgButton}</button>
     </>
   );

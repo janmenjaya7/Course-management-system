@@ -4,7 +4,8 @@ import CustomSeparator from "./CustomSeparator";
 import CircleIcon from "@mui/icons-material/Circle";
 import Modals from "../Certificate-modal/Modal";
 import SubmitAssignment from "../submitAssignment/SubmitAssignment";
-const ContinueLearning = () => {
+import MyTabs from "../courses/MyTabs";
+const ContinueLearning = ({ isEnrolled }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -21,7 +22,7 @@ const ContinueLearning = () => {
           <div>Topic 1 of 5, Assignment 1 of 4</div>
           <div className="ContinueLearning-chip">
             <CircleIcon sx={{ color: "#FFB302 ", height: "8px" }} />
-            <span> inprogrees</span>
+            <span>inprogrees</span>
           </div>
         </div>
         <div className="Lorem-ipsum">
@@ -110,6 +111,9 @@ const ContinueLearning = () => {
               cupiditate? Tenetur consectetur labore eligendi sequi accusantium.
             </p>
           </div>
+        </div>
+        <div className="button-Nav">
+          <MyTabs isEnrolled={!isEnrolled} />
         </div>
       </div>
     </>

@@ -4,13 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./searchnav.css";
 import searchicon from "../../assets/logo/search-24px.svg";
 import { Link } from "react-router-dom";
+import SearchIcon from "@mui/icons-material/Search";
 
 const Searchnav = () => {
   return (
     <div style={{ marginTop: "80px", marginBottom: "10px" }}>
       <div
         className="container container-search"
-        style={{ marginBottom: "0px" }}
+        style={{ marginBottom: "0px", maxWidth: "800px" }}
       >
         <div className="dropdown">
           <button
@@ -128,7 +129,7 @@ const Searchnav = () => {
             }}
           />
           <span>
-            <img className=" logoSearchStyle" src={searchicon} alt="icon" />
+            <SearchIcon className=" logoSearchStyle" />
           </span>
         </div>
 

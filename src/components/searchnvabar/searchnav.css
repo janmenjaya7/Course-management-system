@@ -21,11 +21,17 @@
   width: 100%;
   font-family: "Open Sans";
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .logoSearchStyle {
   position: absolute;
-  right: 22%;
+  right: 34%;
   top: 15%;
-  height: 30px;
+  height: 24px;
+  width: 24px;
+  color: #999;
+  margin-top: 5px;
+  cursor: pointer;
 }

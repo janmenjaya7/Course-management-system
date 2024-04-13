@@ -3,6 +3,8 @@ import Grade from "../grade/Grade";
 import CustomSeparator from "../continuelearning/CustomSeparator";
 import CircleIcon from "@mui/icons-material/Circle";
 import "./assignmentGrade.css";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 const AssignmentGrade = ({
   opc,
@@ -12,7 +14,6 @@ const AssignmentGrade = ({
   iconcolor,
   heding,
 }) => {
-  const handelChangeGrade = () => {};
   return (
     <div>
       <div>
@@ -21,13 +22,23 @@ const AssignmentGrade = ({
             <CustomSeparator />
           </div>
           <div className="ContinueLearning-topics">
-            <div>Topic 1 of 5, Assignment 1 of 4</div>
-            <div
-              className="ContinueLearning-chip"
-              style={{ backgroundColor: bcg }}
-            >
-              <CircleIcon sx={{ color: iconcolor, height: "8px" }} />
-              <span>{completed}</span>
+            <div style={{ display: "flex" }}>
+              <div>Topic 1 of 5, Assignment 1 of 4</div>
+              <div
+                className="ContinueLearning-chip"
+                style={{ backgroundColor: bcg }}
+              >
+                <CircleIcon sx={{ color: iconcolor, height: "8px" }} />
+                <span>{completed}</span>
+              </div>
+            </div>
+            <div className="arrow-icon-sec">
+              <div className="arrow-inner">
+                <ChevronLeftIcon />
+              </div>
+              <div>
+                <ChevronRightIcon />
+              </div>
             </div>
           </div>
 
@@ -38,11 +49,11 @@ const AssignmentGrade = ({
           <div className="ContinueLearning-heading">
             <h1>lipsum dolor sit amet, consetetur sadipscing</h1>
             <div className="btn-submit-main">
-              <button>Submit Assignment</button>
-              <span>Submitted on 03/02/2024</span>
+              <button className="btn-submit">Submit Assignment</button>
+              <span className="text-submit">Submitted on 03/02/2024</span>
             </div>
           </div>
-          <div className="grade" onClick={handelChangeGrade}>
+          <div className="grade">
             <Grade opc={opc} message={message} heding={heding} />
           </div>
 

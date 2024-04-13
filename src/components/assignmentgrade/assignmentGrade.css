@@ -1,4 +1,4 @@
-.ContinueLearning-outersection {
+/* .ContinueLearning-outersection {
   height: 642px;
   margin-top: 80px;
 }
@@ -25,11 +25,24 @@
 .ContinueLearning-topics {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
-  padding: 0 70px;
+  padding: 0 100px;
   height: 56px;
   background: #f8f8f8;
   color: #000;
+}
+.arrow-icon-sec {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.arrow-inner {
+  background-color: #d7ecec;
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  margin: auto;
 }
 .Lorem-ipsum p {
   margin: 0;
@@ -64,29 +77,31 @@
   justify-content: space-between;
   flex-direction: column;
 }
-/* .ContinueLearning-heading button {
-  margin-left: auto;
+.btn-submit {
+  padding: 10px 15px;
+  background: #d7ecec;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  color: #3aa2a0;
 }
-.ContinueLearning-heading > button {
-  background-color: #1d366f;
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  height: 40px;
-  color: white;
-  width: 172px;
-} */
-
+.text-submit {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: #262626;
+  opacity: 0.5;
+  text-align: right;
+  padding: 10px 0;
+}
 .ContinueLearning-paragrhaph {
   width: 1166px;
   height: 410px;
-
   margin: auto;
   overflow: hidden;
   overflow-y: auto;
 }
 .ContinueLearning-paragrhaph::-webkit-scrollbar {
-  width: 1px;
+  display: none;
 }
 
 .ContinueLearning-paragrhaph::-webkit-scrollbar-track {
@@ -110,4 +125,4 @@
   font-size: 17px;
   letter-spacing: 0px;
   color: #252d41;
-}
+} */
