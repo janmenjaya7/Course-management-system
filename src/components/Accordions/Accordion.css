@@ -1,0 +1,22 @@
+.accordionSideTypo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.accordionSideTypo-ul {
+  display: flex;
+  list-style-type: none;
+  float: right;
+  padding: 0;
+}
+.accordionSideTypo-li {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.accordionSideTypo-li img {
+  margin-right: 5px;
+}
