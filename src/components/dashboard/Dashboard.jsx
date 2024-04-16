@@ -31,6 +31,14 @@ const Dashboard = () => {
                 value={value}
                 onChange={handleChange}
                 aria-label="basic tabs example"
+                sx={{ "& .Mui-selected": { color: "black" } }}
+                TabIndicatorProps={{
+                  sx: {
+                    backgroundColor: "#1d366f",
+                    height: "5px",
+                    borderRadius: "3px 3px 0px 0px",
+                  },
+                }}
               >
                 <Tab label="All" />
                 <Tab label="Inprogress" />

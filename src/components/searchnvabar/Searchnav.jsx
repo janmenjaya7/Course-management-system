@@ -1,8 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import "./searchnav.css";
-import searchicon from "../../assets/logo/search-24px.svg";
 import { Link } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 

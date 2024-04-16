@@ -7,7 +7,7 @@ import SubmitAssignment from "../submitAssignment/SubmitAssignment";
 import MyTabs from "../courses/MyTabs";
 const ContinueLearning = ({ isEnrolled }) => {
   const [open, setOpen] = useState(false);
-  const bcg = "#FFFFFF";
+  const bcg = "#FFB302";
   const iconColor = "#FF0000";
   const text = "upcoming";
 
@@ -25,9 +25,9 @@ const ContinueLearning = ({ isEnrolled }) => {
         <div className="ContinueLearning-topics">
           <div>Topic 1 of 5, Assignment 1 of 4</div>
           <div className="ContinueLearning-chip">
-            <CircleIcon sx={{ color: "#FFB302 ", height: "8px" }} />
+            <CircleIcon sx={{ color: "#E6743F ", height: "8px" }} />
             <span>inprogrees</span>
-            <div
+            {/* <div
               className="ContinueLearning-chip"
               style={{ backgroundColor: bcg }}
             >
@@ -37,8 +37,8 @@ const ContinueLearning = ({ isEnrolled }) => {
                   height: "8px",
                 }}
               />
-              <span> {text === "upcoming" ? "upcoming" : "inprogress"}</span>
-            </div>
+              {/* <span> {text === "upcoming" ? "upcoming" : "inprogress"}</span> */}
+            {/* </div>  */}
           </div>
         </div>
         <div className="Lorem-ipsum">

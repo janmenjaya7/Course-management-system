@@ -1,11 +1,10 @@
 .ContinueLearning-outersection {
-  height: 642px;
-  margin-top: 80px;
+  /* height: 642px; */
+  padding: 0 100px;
+  margin-top: 60px;
 }
 .ContinueLearning-headig {
   display: flex;
-  padding: 0 50px;
-  margin-left: 20px;
 }
 
 .ContinueLearning-chip {
@@ -26,7 +25,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 0 70px;
+  /* padding: 0 70px; */
   height: 56px;
   background: #f8f8f8;
   color: #000;
@@ -45,8 +44,6 @@
   padding-bottom: 10px;
 }
 .ContinueLearning-heading {
-  width: 1166px;
-
   margin: auto;
 }
 .ContinueLearning-heading h1 {
@@ -75,12 +72,12 @@
 .ContinueLearning-paragrhaph {
   width: 1166px;
   height: 410px;
-
   margin: auto;
   overflow: hidden;
   overflow-y: auto;
 }
 .ContinueLearning-paragrhaph::-webkit-scrollbar {
+  display: none;
   width: 1px;
 }
 

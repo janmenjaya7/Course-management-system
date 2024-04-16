@@ -82,3 +82,24 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .cards {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cards {
+    max-width: 250px;
+  }
+  .java-programming {
+    font-size: 15px;
+  }
+  .name-sec {
+    font-size: 13px;
+  }
+  .submit-due {
+    font-size: 11px;
+  }
+}

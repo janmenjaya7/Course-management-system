@@ -1,22 +1,33 @@
-import React from 'react'
-import Tabs from '@mui/material/Tabs'
-import Tab from '@mui/material/Tab'
-import './MyTabs.css'
-import Syllabus from '../courses/Syllabus'
-import Overview from '../courses/Overview'
-import CardFroumSec from '../card-foum/CardFroumSec'
-import FaqSection from './FaqSection'
+import React from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import "./MyTabs.css";
+import Syllabus from "../courses/Syllabus";
+import Overview from "../courses/Overview";
+import CardFroumSec from "../card-foum/CardFroumSec";
+import FaqSection from "./FaqSection";
 export default function MyTabs({ isEnrolled }) {
-  const [value, setValue] = React.useState(0)
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
-    setValue(newValue)
-  }
+    setValue(newValue);
+  };
 
   return (
     <>
       <div className="tabInside">
-        <Tabs value={value} onChange={handleChange}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          sx={{ "& .Mui-selected": { color: "black" } }}
+          TabIndicatorProps={{
+            sx: {
+              backgroundColor: "#1d366f",
+              height: "5px",
+              borderRadius: "3px 3px 0px 0px",
+            },
+          }}
+        >
           <Tab value={0} label="Syllabus" />
           <Tab value={1} label="Overview" />
           {isEnrolled ? <Tab value={2} label="Forum" /> : null}
@@ -33,5 +44,5 @@ export default function MyTabs({ isEnrolled }) {
         <Syllabus />
       )}
     </>
-  )
+  );
 }
